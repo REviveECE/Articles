@@ -1,0 +1,2391 @@
+
+C:\Users\Amjad\AppData\Local\arduino\sketches\E42DF8EF6C44FA3767B13511AEB9538E/sketch_oct20a.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	0c 94 5d 00 	jmp	0xba	; 0xba <__ctors_end>
+   4:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+   8:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+   c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  10:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  14:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  18:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  1c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  20:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  24:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  28:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  2c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  30:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  34:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  38:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  3c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  40:	0c 94 07 02 	jmp	0x40e	; 0x40e <__vector_16>
+  44:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  48:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  4c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  50:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  54:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  58:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  5c:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+  60:	0c 94 51 02 	jmp	0x4a2	; 0x4a2 <__vector_24>
+  64:	0c 94 85 00 	jmp	0x10a	; 0x10a <__bad_interrupt>
+
+00000068 <__trampolines_end>:
+__trampolines_start():
+  68:	00 00       	nop
+  6a:	00 00       	nop
+  6c:	25 00       	.word	0x0025	; ????
+  6e:	28 00       	.word	0x0028	; ????
+  70:	2b 00       	.word	0x002b	; ????
+
+00000072 <digital_pin_to_port_PGM>:
+  72:	04 04 04 04 04 04 04 04 02 02 02 02 02 02 03 03     ................
+  82:	03 03 03 03 02 02 03                                .......
+
+00000089 <digital_pin_to_bit_mask_PGM>:
+  89:	01 02 04 08 10 20 40 80 01 02 04 08 10 20 01 02     ..... @...... ..
+  99:	04 08 10 20 40 80 40                                ... @.@
+
+000000a0 <digital_pin_to_timer_PGM>:
+  a0:	00 00 00 09 00 03 02 00 00 04 05 08 00 00 00 00     ................
+	...
+
+000000b8 <__ctors_start>:
+__ctors_start():
+  b8:	b4 04       	cpc	r11, r4
+
+000000ba <__ctors_end>:
+__dtors_end():
+  ba:	11 24       	eor	r1, r1
+  bc:	1f be       	out	0x3f, r1	; 63
+  be:	cf ef       	ldi	r28, 0xFF	; 255
+  c0:	d8 e0       	ldi	r29, 0x08	; 8
+  c2:	de bf       	out	0x3e, r29	; 62
+  c4:	cd bf       	out	0x3d, r28	; 61
+
+000000c6 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  c6:	11 e0       	ldi	r17, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  c8:	a0 e0       	ldi	r26, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  ca:	b1 e0       	ldi	r27, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  cc:	ea e9       	ldi	r30, 0x9A	; 154
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  ce:	f9 e0       	ldi	r31, 0x09	; 9
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  d0:	02 c0       	rjmp	.+4      	; 0xd6 <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  d2:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  d4:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  d6:	aa 31       	cpi	r26, 0x1A	; 26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  d8:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  da:	d9 f7       	brne	.-10     	; 0xd2 <__do_copy_data+0xc>
+
+000000dc <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  dc:	21 e0       	ldi	r18, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  de:	aa e1       	ldi	r26, 0x1A	; 26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  e0:	b1 e0       	ldi	r27, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  e2:	01 c0       	rjmp	.+2      	; 0xe6 <.do_clear_bss_start>
+
+000000e4 <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  e4:	1d 92       	st	X+, r1
+
+000000e6 <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  e6:	ac 3c       	cpi	r26, 0xCC	; 204
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  e8:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  ea:	e1 f7       	brne	.-8      	; 0xe4 <.do_clear_bss_loop>
+
+000000ec <__do_global_ctors>:
+__do_global_ctors():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2466
+  ec:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2467
+  ee:	cd e5       	ldi	r28, 0x5D	; 93
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2468
+  f0:	d0 e0       	ldi	r29, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2472
+  f2:	04 c0       	rjmp	.+8      	; 0xfc <__do_global_ctors+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2474
+  f4:	21 97       	sbiw	r28, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2480
+  f6:	fe 01       	movw	r30, r28
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2481
+  f8:	0e 94 c5 04 	call	0x98a	; 0x98a <__tablejump2__>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2483
+  fc:	cc 35       	cpi	r28, 0x5C	; 92
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2484
+  fe:	d1 07       	cpc	r29, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2489
+ 100:	c9 f7       	brne	.-14     	; 0xf4 <__do_global_ctors+0x8>
+ 102:	0e 94 7c 03 	call	0x6f8	; 0x6f8 <main>
+ 106:	0c 94 cb 04 	jmp	0x996	; 0x996 <_exit>
+
+0000010a <__bad_interrupt>:
+__vector_22():
+ 10a:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000010e <TwoWire::endTransmission(unsigned char) [clone .constprop.15]>:
+endTransmission():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:222
+//  the bus tenure has been properly ended with a STOP. It
+//  is very possible to leave the bus in a hung state if
+//  no call to endTransmission(true) is made. Some I2C
+//  devices will behave oddly if they do not see a STOP.
+//
+uint8_t TwoWire::endTransmission(uint8_t sendStop)
+ 10e:	28 2f       	mov	r18, r24
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:225
+{
+  // transmit buffer (blocking)
+  uint8_t ret = twi_writeTo(txAddress, txBuffer, txBufferLength, 1, sendStop);
+ 110:	90 91 cb 01 	lds	r25, 0x01CB	; 0x8001cb <TwoWire::txBufferLength>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:269
+ */
+uint8_t twi_writeTo(uint8_t address, uint8_t* data, uint8_t length, uint8_t wait, uint8_t sendStop)
+{
+  // ensure data will fit into buffer
+  if(TWI_BUFFER_SIZE < length){
+    return 1;
+ 114:	81 e0       	ldi	r24, 0x01	; 1
+twi_writeTo():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:268
+ *          5 .. timeout
+ */
+uint8_t twi_writeTo(uint8_t address, uint8_t* data, uint8_t length, uint8_t wait, uint8_t sendStop)
+{
+  // ensure data will fit into buffer
+  if(TWI_BUFFER_SIZE < length){
+ 116:	91 32       	cpi	r25, 0x21	; 33
+ 118:	08 f0       	brcs	.+2      	; 0x11c <TwoWire::endTransmission(unsigned char) [clone .constprop.15]+0xe>
+ 11a:	42 c0       	rjmp	.+132    	; 0x1a0 <TwoWire::endTransmission(unsigned char) [clone .constprop.15]+0x92>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:282
+        twi_handleTimeout(twi_do_reset_on_timeout);
+        return (5);
+      }
+    }
+  #else
+    while(TWI_READY != twi_state){
+ 11c:	80 91 9b 01 	lds	r24, 0x019B	; 0x80019b <twi_state>
+ 120:	81 11       	cpse	r24, r1
+ 122:	fc cf       	rjmp	.-8      	; 0x11c <TwoWire::endTransmission(unsigned char) [clone .constprop.15]+0xe>
+endTransmission():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:225
+ 124:	80 91 ca 01 	lds	r24, 0x01CA	; 0x8001ca <TwoWire::txAddress>
+twi_writeTo():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:287
+      continue;
+    }
+  #endif
+
+  twi_state = TWI_MTX;
+ 128:	32 e0       	ldi	r19, 0x02	; 2
+ 12a:	30 93 9b 01 	sts	0x019B, r19	; 0x80019b <twi_state>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:288
+  twi_sendStop = sendStop;
+ 12e:	20 93 9a 01 	sts	0x019A, r18	; 0x80019a <twi_sendStop>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:290
+  // reset error state (0xFF.. no error occurred)
+  twi_error = 0xFF;
+ 132:	2f ef       	ldi	r18, 0xFF	; 255
+ 134:	20 93 99 01 	sts	0x0199, r18	; 0x800199 <twi_error>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:293
+
+  // initialize buffer iteration vars
+  twi_masterBuffer = data;
+ 138:	2a ea       	ldi	r18, 0xAA	; 170
+ 13a:	31 e0       	ldi	r19, 0x01	; 1
+ 13c:	30 93 98 01 	sts	0x0198, r19	; 0x800198 <twi_masterBuffer+0x1>
+ 140:	20 93 97 01 	sts	0x0197, r18	; 0x800197 <twi_masterBuffer>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:294
+  twi_masterBufferIndex = 0;
+ 144:	10 92 96 01 	sts	0x0196, r1	; 0x800196 <twi_masterBufferIndex>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:295
+  twi_masterBufferLength = length;
+ 148:	90 93 95 01 	sts	0x0195, r25	; 0x800195 <twi_masterBufferLength>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:298
+
+  // build sla+w, slave device address + w bit
+  twi_slarw = TW_WRITE;
+ 14c:	10 92 94 01 	sts	0x0194, r1	; 0x800194 <twi_slarw>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:299
+  twi_slarw |= address << 1;
+ 150:	90 91 94 01 	lds	r25, 0x0194	; 0x800194 <twi_slarw>
+ 154:	88 0f       	add	r24, r24
+ 156:	89 2b       	or	r24, r25
+ 158:	80 93 94 01 	sts	0x0194, r24	; 0x800194 <twi_slarw>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:304
+
+  // if we're in a repeated start, then we've already sent the START
+  // in the ISR. Don't do it again.
+  //
+  if (true == twi_inRepStart) {
+ 15c:	80 91 93 01 	lds	r24, 0x0193	; 0x800193 <twi_inRepStart>
+ 160:	81 30       	cpi	r24, 0x01	; 1
+ 162:	29 f5       	brne	.+74     	; 0x1ae <TwoWire::endTransmission(unsigned char) [clone .constprop.15]+0xa0>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:311
+    // (@@@ we hope), and the TWI statemachine is just waiting for the address byte.
+    // We need to remove ourselves from the repeated start state before we enable interrupts,
+    // since the ISR is ASYNC, and we could get confused if we hit the ISR before cleaning
+    // up. Also, don't enable the START interrupt. There may be one pending from the 
+    // repeated start that we sent ourselves, and that would really confuse things.
+    twi_inRepStart = false; // Remember, we're dealing with an ASYNC ISR
+ 164:	10 92 93 01 	sts	0x0193, r1	; 0x800193 <twi_inRepStart>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:322
+          return (5);
+        }
+      } while(TWCR & _BV(TWWC));
+    #else
+      do {
+        TWDR = twi_slarw;
+ 168:	80 91 94 01 	lds	r24, 0x0194	; 0x800194 <twi_slarw>
+ 16c:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:323
+      } while(TWCR & _BV(TWWC));
+ 170:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+ 174:	83 fd       	sbrc	r24, 3
+ 176:	f8 cf       	rjmp	.-16     	; 0x168 <TwoWire::endTransmission(unsigned char) [clone .constprop.15]+0x5a>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:325
+    #endif
+    TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE);  // enable INTs, but not START
+ 178:	85 ec       	ldi	r24, 0xC5	; 197
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:329
+  }
+  else
+    // send start condition
+    TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE) | _BV(TWSTA); // enable INTs
+ 17a:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:341
+        twi_handleTimeout(twi_do_reset_on_timeout);
+        return (5);
+      }
+    }
+  #else
+    while(wait && (TWI_MTX == twi_state)){
+ 17e:	80 91 9b 01 	lds	r24, 0x019B	; 0x80019b <twi_state>
+ 182:	82 30       	cpi	r24, 0x02	; 2
+ 184:	e1 f3       	breq	.-8      	; 0x17e <TwoWire::endTransmission(unsigned char) [clone .constprop.15]+0x70>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:346
+      continue;
+    }
+  #endif
+
+  if (twi_error == 0xFF)
+ 186:	80 91 99 01 	lds	r24, 0x0199	; 0x800199 <twi_error>
+ 18a:	8f 3f       	cpi	r24, 0xFF	; 255
+ 18c:	91 f0       	breq	.+36     	; 0x1b2 <TwoWire::endTransmission(unsigned char) [clone .constprop.15]+0xa4>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:348
+    return 0; // success
+  else if (twi_error == TW_MT_SLA_NACK)
+ 18e:	80 91 99 01 	lds	r24, 0x0199	; 0x800199 <twi_error>
+ 192:	80 32       	cpi	r24, 0x20	; 32
+ 194:	81 f0       	breq	.+32     	; 0x1b6 <TwoWire::endTransmission(unsigned char) [clone .constprop.15]+0xa8>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:350
+    return 2; // error: address send, nack received
+  else if (twi_error == TW_MT_DATA_NACK)
+ 196:	80 91 99 01 	lds	r24, 0x0199	; 0x800199 <twi_error>
+ 19a:	80 33       	cpi	r24, 0x30	; 48
+ 19c:	71 f0       	breq	.+28     	; 0x1ba <TwoWire::endTransmission(unsigned char) [clone .constprop.15]+0xac>
+endTransmission():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:353
+    return 3; // error: data send, nack received
+  else
+    return 4; // other twi error
+ 19e:	84 e0       	ldi	r24, 0x04	; 4
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:227
+  // reset tx buffer iterator vars
+  txBufferIndex = 0;
+ 1a0:	10 92 a9 01 	sts	0x01A9, r1	; 0x8001a9 <TwoWire::txBufferIndex>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:228
+  txBufferLength = 0;
+ 1a4:	10 92 cb 01 	sts	0x01CB, r1	; 0x8001cb <TwoWire::txBufferLength>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:230
+  // indicate that we are done transmitting
+  transmitting = 0;
+ 1a8:	10 92 a8 01 	sts	0x01A8, r1	; 0x8001a8 <TwoWire::transmitting>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:232
+  return ret;
+}
+ 1ac:	08 95       	ret
+twi_writeTo():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:329
+    #endif
+    TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE);  // enable INTs, but not START
+  }
+  else
+    // send start condition
+    TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE) | _BV(TWSTA); // enable INTs
+ 1ae:	85 ee       	ldi	r24, 0xE5	; 229
+ 1b0:	e4 cf       	rjmp	.-56     	; 0x17a <TwoWire::endTransmission(unsigned char) [clone .constprop.15]+0x6c>
+endTransmission():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:347
+      continue;
+    }
+  #endif
+
+  if (twi_error == 0xFF)
+    return 0; // success
+ 1b2:	80 e0       	ldi	r24, 0x00	; 0
+ 1b4:	f5 cf       	rjmp	.-22     	; 0x1a0 <TwoWire::endTransmission(unsigned char) [clone .constprop.15]+0x92>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:349
+  else if (twi_error == TW_MT_SLA_NACK)
+    return 2; // error: address send, nack received
+ 1b6:	82 e0       	ldi	r24, 0x02	; 2
+ 1b8:	f3 cf       	rjmp	.-26     	; 0x1a0 <TwoWire::endTransmission(unsigned char) [clone .constprop.15]+0x92>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:351
+  else if (twi_error == TW_MT_DATA_NACK)
+    return 3; // error: data send, nack received
+ 1ba:	83 e0       	ldi	r24, 0x03	; 3
+ 1bc:	f1 cf       	rjmp	.-30     	; 0x1a0 <TwoWire::endTransmission(unsigned char) [clone .constprop.15]+0x92>
+
+000001be <digitalWrite.constprop.9>:
+digitalWrite():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:189
+  }
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  uint8_t timer = digitalPinToTimer(pin);
+ 1be:	90 e0       	ldi	r25, 0x00	; 0
+ 1c0:	fc 01       	movw	r30, r24
+ 1c2:	e0 56       	subi	r30, 0x60	; 96
+ 1c4:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1c6:	24 91       	lpm	r18, Z
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:190
+  uint8_t bit = digitalPinToBitMask(pin);
+ 1c8:	fc 01       	movw	r30, r24
+ 1ca:	e7 57       	subi	r30, 0x77	; 119
+ 1cc:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1ce:	34 91       	lpm	r19, Z
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:191
+  uint8_t port = digitalPinToPort(pin);
+ 1d0:	fc 01       	movw	r30, r24
+ 1d2:	ee 58       	subi	r30, 0x8E	; 142
+ 1d4:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1d6:	e4 91       	lpm	r30, Z
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:194
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 1d8:	ee 23       	and	r30, r30
+ 1da:	b1 f0       	breq	.+44     	; 0x208 <digitalWrite.constprop.9+0x4a>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:198
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 1dc:	22 23       	and	r18, r18
+ 1de:	39 f0       	breq	.+14     	; 0x1ee <digitalWrite.constprop.9+0x30>
+turnOffPWM():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:77
+//
+//static inline void turnOffPWM(uint8_t timer) __attribute__ ((always_inline));
+//static inline void turnOffPWM(uint8_t timer)
+static void turnOffPWM(uint8_t timer)
+{
+  switch (timer)
+ 1e0:	24 30       	cpi	r18, 0x04	; 4
+ 1e2:	e9 f0       	breq	.+58     	; 0x21e <digitalWrite.constprop.9+0x60>
+ 1e4:	90 f4       	brcc	.+36     	; 0x20a <digitalWrite.constprop.9+0x4c>
+ 1e6:	22 30       	cpi	r18, 0x02	; 2
+ 1e8:	51 f1       	breq	.+84     	; 0x23e <digitalWrite.constprop.9+0x80>
+ 1ea:	23 30       	cpi	r18, 0x03	; 3
+ 1ec:	61 f1       	breq	.+88     	; 0x246 <digitalWrite.constprop.9+0x88>
+digitalWrite():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:200
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+ 1ee:	f0 e0       	ldi	r31, 0x00	; 0
+ 1f0:	ee 0f       	add	r30, r30
+ 1f2:	ff 1f       	adc	r31, r31
+ 1f4:	e8 59       	subi	r30, 0x98	; 152
+ 1f6:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1f8:	a5 91       	lpm	r26, Z+
+ 1fa:	b4 91       	lpm	r27, Z
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:202
+
+  uint8_t oldSREG = SREG;
+ 1fc:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:203
+  cli();
+ 1fe:	f8 94       	cli
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:208
+
+  if (val == LOW) {
+    *out &= ~bit;
+  } else {
+    *out |= bit;
+ 200:	ec 91       	ld	r30, X
+ 202:	3e 2b       	or	r19, r30
+ 204:	3c 93       	st	X, r19
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:211
+  }
+
+  SREG = oldSREG;
+ 206:	8f bf       	out	0x3f, r24	; 63
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:212
+}
+ 208:	08 95       	ret
+turnOffPWM():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:77
+//
+//static inline void turnOffPWM(uint8_t timer) __attribute__ ((always_inline));
+//static inline void turnOffPWM(uint8_t timer)
+static void turnOffPWM(uint8_t timer)
+{
+  switch (timer)
+ 20a:	28 30       	cpi	r18, 0x08	; 8
+ 20c:	71 f0       	breq	.+28     	; 0x22a <digitalWrite.constprop.9+0x6c>
+ 20e:	29 30       	cpi	r18, 0x09	; 9
+ 210:	91 f0       	breq	.+36     	; 0x236 <digitalWrite.constprop.9+0x78>
+ 212:	25 30       	cpi	r18, 0x05	; 5
+ 214:	61 f7       	brne	.-40     	; 0x1ee <digitalWrite.constprop.9+0x30>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:87
+        TCCR1A &= ~_BV(COM1A1);
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 216:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 21a:	8f 7d       	andi	r24, 0xDF	; 223
+ 21c:	03 c0       	rjmp	.+6      	; 0x224 <digitalWrite.constprop.9+0x66>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:82
+  switch (timer)
+  {
+    // Timer1
+    #if defined(TCCR1A) && defined(COM1A1)
+      case TIMER1A:
+        TCCR1A &= ~_BV(COM1A1);
+ 21e:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 222:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:87
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 224:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 228:	e2 cf       	rjmp	.-60     	; 0x1ee <digitalWrite.constprop.9+0x30>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:104
+        TCCR2 &= ~_BV(COM21);
+        break;
+    #endif
+    #if defined(TCCR2A) && defined(COM2A1)
+      case TIMER2A:
+        TCCR2A &= ~_BV(COM2A1);
+ 22a:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 22e:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:109
+        break;
+    #endif
+    #if defined(TCCR2A) && defined(COM2B1)
+      case TIMER2B:
+        TCCR2A &= ~_BV(COM2B1);
+ 230:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 234:	dc cf       	rjmp	.-72     	; 0x1ee <digitalWrite.constprop.9+0x30>
+ 236:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 23a:	8f 7d       	andi	r24, 0xDF	; 223
+ 23c:	f9 cf       	rjmp	.-14     	; 0x230 <digitalWrite.constprop.9+0x72>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:176
+        TCCR0 &= ~_BV(COM01);
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0A1)
+      case TIMER0A:
+        TCCR0A &= ~_BV(COM0A1);
+ 23e:	84 b5       	in	r24, 0x24	; 36
+ 240:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:181
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0B1)
+      case TIMER0B:
+        TCCR0A &= ~_BV(COM0B1);
+ 242:	84 bd       	out	0x24, r24	; 36
+ 244:	d4 cf       	rjmp	.-88     	; 0x1ee <digitalWrite.constprop.9+0x30>
+ 246:	84 b5       	in	r24, 0x24	; 36
+ 248:	8f 7d       	andi	r24, 0xDF	; 223
+ 24a:	fb cf       	rjmp	.-10     	; 0x242 <digitalWrite.constprop.9+0x84>
+
+0000024c <micros>:
+micros():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:237
+  unsigned char f; // temporary storage for millis fraction counter
+  unsigned char q = 0; // record whether an overflow is flagged
+#endif
+  // t will be the number where the timer0 counter stopped
+  uint8_t t;
+  uint8_t oldSREG = SREG;
+ 24c:	3f b7       	in	r19, 0x3f	; 63
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:240
+
+  // Stop all interrupts
+  cli();
+ 24e:	f8 94       	cli
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:247
+#ifdef CORRECT_EXACT_MICROS
+  // combine exact millisec and 8usec counters
+  m = timer0_millis;
+  f = timer0_fract;
+#else
+  m = timer0_overflow_count;
+ 250:	80 91 8f 01 	lds	r24, 0x018F	; 0x80018f <timer0_overflow_count>
+ 254:	90 91 90 01 	lds	r25, 0x0190	; 0x800190 <timer0_overflow_count+0x1>
+ 258:	a0 91 91 01 	lds	r26, 0x0191	; 0x800191 <timer0_overflow_count+0x2>
+ 25c:	b0 91 92 01 	lds	r27, 0x0192	; 0x800192 <timer0_overflow_count+0x3>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:252
+#endif
+
+  // TCNT0 : The Timer Counter Register
+#if defined(TCNT0)
+  t = TCNT0;
+ 260:	26 b5       	in	r18, 0x26	; 38
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:261
+  #error TIMER 0 not defined
+#endif
+
+  // Timer0 Interrupt Flag Register
+#ifdef TIFR0
+  if ((TIFR0 & _BV(TOV0)) && (t < 255))
+ 262:	a8 9b       	sbis	0x15, 0	; 21
+ 264:	05 c0       	rjmp	.+10     	; 0x270 <micros+0x24>
+ 266:	2f 3f       	cpi	r18, 0xFF	; 255
+ 268:	19 f0       	breq	.+6      	; 0x270 <micros+0x24>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:263
+#ifndef CORRECT_EXACT_MICROS
+    m++;
+ 26a:	01 96       	adiw	r24, 0x01	; 1
+ 26c:	a1 1d       	adc	r26, r1
+ 26e:	b1 1d       	adc	r27, r1
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:276
+#else
+    q = 1;
+#endif
+#endif
+  // Restore SREG
+  SREG = oldSREG;
+ 270:	3f bf       	out	0x3f, r19	; 63
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:292
+      ((t * MICROSECONDS_PER_TIMER0_OVERFLOW) >> 8);
+  return q ? m + MICROSECONDS_PER_TIMER0_OVERFLOW : m;
+#elif 1
+  /* All power-of-two Megahertz frequencies enter here, as well as 12.8 MHz.
+     We only end up here if right shift before multiplication is exact. */
+  return ((m << 8) + t) * (MICROSECONDS_PER_TIMER0_OVERFLOW >> 8);
+ 272:	ba 2f       	mov	r27, r26
+ 274:	a9 2f       	mov	r26, r25
+ 276:	98 2f       	mov	r25, r24
+ 278:	88 27       	eor	r24, r24
+ 27a:	bc 01       	movw	r22, r24
+ 27c:	cd 01       	movw	r24, r26
+ 27e:	62 0f       	add	r22, r18
+ 280:	71 1d       	adc	r23, r1
+ 282:	81 1d       	adc	r24, r1
+ 284:	91 1d       	adc	r25, r1
+ 286:	43 e0       	ldi	r20, 0x03	; 3
+ 288:	66 0f       	add	r22, r22
+ 28a:	77 1f       	adc	r23, r23
+ 28c:	88 1f       	adc	r24, r24
+ 28e:	99 1f       	adc	r25, r25
+ 290:	4a 95       	dec	r20
+ 292:	d1 f7       	brne	.-12     	; 0x288 <micros+0x3c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:393
+  // m & t are multiplied by 4 (since it was already multiplied by 256)
+  // t is multiplied by 4
+  return ((m << 8) + t) * (64 / clockCyclesPerMicrosecond());
+#endif
+#endif // 0
+}
+ 294:	08 95       	ret
+
+00000296 <TwoWire::available()>:
+available():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:290
+// must be called in:
+// slave rx event callback
+// or after requestFrom(address, numBytes)
+int TwoWire::available(void)
+{
+  return rxBufferLength - rxBufferIndex;
+ 296:	80 91 88 01 	lds	r24, 0x0188	; 0x800188 <TwoWire::rxBufferLength>
+ 29a:	90 91 87 01 	lds	r25, 0x0187	; 0x800187 <TwoWire::rxBufferIndex>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:291
+}
+ 29e:	89 1b       	sub	r24, r25
+ 2a0:	99 0b       	sbc	r25, r25
+ 2a2:	08 95       	ret
+
+000002a4 <TwoWire::onRequestService()>:
+onRequestService():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:366
+  // !!! this will kill any pending pre-master sendTo() activity
+  txBufferIndex = 0;
+  txBufferLength = 0;
+  // alert user program
+  user_onRequest();
+}
+ 2a4:	08 95       	ret
+
+000002a6 <TwoWire::onReceiveService(unsigned char*, int)>:
+onReceiveService():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:351
+  // set rx iterator vars
+  rxBufferIndex = 0;
+  rxBufferLength = numBytes;
+  // alert user program
+  user_onReceive(numBytes);
+}
+ 2a6:	08 95       	ret
+
+000002a8 <twi_stop>:
+twi_stop():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:436
+ * Output   none
+ */
+void twi_stop(void)
+{
+  // send stop condition
+  TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTO);
+ 2a8:	85 ed       	ldi	r24, 0xD5	; 213
+ 2aa:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:456
+          return;
+        }
+      }
+    }
+  #else
+    while(TWCR & _BV(TWSTO)){
+ 2ae:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+ 2b2:	84 fd       	sbrc	r24, 4
+ 2b4:	fc cf       	rjmp	.-8      	; 0x2ae <twi_stop+0x6>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:462
+      continue;
+    }
+  #endif
+
+  // update twi state
+  twi_state = TWI_READY;
+ 2b6:	10 92 9b 01 	sts	0x019B, r1	; 0x80019b <twi_state>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:463
+}
+ 2ba:	08 95       	ret
+
+000002bc <twi_transmit>:
+twi_transmit():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:371
+uint8_t twi_transmit(const uint8_t* data, uint8_t length)
+{
+  uint8_t i;
+
+  // ensure data will fit into buffer
+  if(TWI_BUFFER_SIZE < (twi_txBufferLength+length)){
+ 2bc:	20 91 40 01 	lds	r18, 0x0140	; 0x800140 <twi_txBufferLength>
+ 2c0:	26 0f       	add	r18, r22
+ 2c2:	33 27       	eor	r19, r19
+ 2c4:	33 1f       	adc	r19, r19
+ 2c6:	21 32       	cpi	r18, 0x21	; 33
+ 2c8:	31 05       	cpc	r19, r1
+ 2ca:	ec f4       	brge	.+58     	; 0x306 <twi_transmit+0x4a>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:376
+    return 1;
+  }
+
+  // ensure we are currently a slave transmitter
+  if(TWI_STX != twi_state){
+ 2cc:	20 91 9b 01 	lds	r18, 0x019B	; 0x80019b <twi_state>
+ 2d0:	fc 01       	movw	r30, r24
+ 2d2:	90 e0       	ldi	r25, 0x00	; 0
+ 2d4:	80 e0       	ldi	r24, 0x00	; 0
+ 2d6:	24 30       	cpi	r18, 0x04	; 4
+ 2d8:	69 f0       	breq	.+26     	; 0x2f4 <twi_transmit+0x38>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:377
+    return 2;
+ 2da:	82 e0       	ldi	r24, 0x02	; 2
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:387
+    twi_txBuffer[twi_txBufferLength+i] = data[i];
+  }
+  twi_txBufferLength += length;
+
+  return 0;
+}
+ 2dc:	08 95       	ret
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:382
+    return 2;
+  }
+
+  // set length and copy data into tx buffer
+  for(i = 0; i < length; ++i){
+    twi_txBuffer[twi_txBufferLength+i] = data[i];
+ 2de:	a0 91 40 01 	lds	r26, 0x0140	; 0x800140 <twi_txBufferLength>
+ 2e2:	21 91       	ld	r18, Z+
+ 2e4:	ac 01       	movw	r20, r24
+ 2e6:	40 5e       	subi	r20, 0xE0	; 224
+ 2e8:	5e 4f       	sbci	r21, 0xFE	; 254
+ 2ea:	a4 0f       	add	r26, r20
+ 2ec:	b5 2f       	mov	r27, r21
+ 2ee:	b1 1d       	adc	r27, r1
+ 2f0:	2c 93       	st	X, r18
+ 2f2:	01 96       	adiw	r24, 0x01	; 1
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:381
+  if(TWI_STX != twi_state){
+    return 2;
+  }
+
+  // set length and copy data into tx buffer
+  for(i = 0; i < length; ++i){
+ 2f4:	86 17       	cp	r24, r22
+ 2f6:	98 f3       	brcs	.-26     	; 0x2de <twi_transmit+0x22>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:384
+    twi_txBuffer[twi_txBufferLength+i] = data[i];
+  }
+  twi_txBufferLength += length;
+ 2f8:	80 91 40 01 	lds	r24, 0x0140	; 0x800140 <twi_txBufferLength>
+ 2fc:	68 0f       	add	r22, r24
+ 2fe:	60 93 40 01 	sts	0x0140, r22	; 0x800140 <twi_txBufferLength>
+ 302:	80 e0       	ldi	r24, 0x00	; 0
+ 304:	08 95       	ret
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:372
+{
+  uint8_t i;
+
+  // ensure data will fit into buffer
+  if(TWI_BUFFER_SIZE < (twi_txBufferLength+length)){
+    return 1;
+ 306:	81 e0       	ldi	r24, 0x01	; 1
+ 308:	08 95       	ret
+
+0000030a <TwoWire::flush()>:
+flush():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:326
+}
+
+void TwoWire::flush(void)
+{
+  // XXX: to be implemented.
+}
+ 30a:	08 95       	ret
+
+0000030c <TwoWire::peek()>:
+peek():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:316
+// or after requestFrom(address, numBytes)
+int TwoWire::peek(void)
+{
+  int value = -1;
+
+  if(rxBufferIndex < rxBufferLength){
+ 30c:	e0 91 87 01 	lds	r30, 0x0187	; 0x800187 <TwoWire::rxBufferIndex>
+ 310:	80 91 88 01 	lds	r24, 0x0188	; 0x800188 <TwoWire::rxBufferLength>
+ 314:	e8 17       	cp	r30, r24
+ 316:	30 f4       	brcc	.+12     	; 0x324 <TwoWire::peek()+0x18>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:317
+    value = rxBuffer[rxBufferIndex];
+ 318:	f0 e0       	ldi	r31, 0x00	; 0
+ 31a:	e9 59       	subi	r30, 0x99	; 153
+ 31c:	fe 4f       	sbci	r31, 0xFE	; 254
+ 31e:	80 81       	ld	r24, Z
+ 320:	90 e0       	ldi	r25, 0x00	; 0
+ 322:	08 95       	ret
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:314
+// must be called in:
+// slave rx event callback
+// or after requestFrom(address, numBytes)
+int TwoWire::peek(void)
+{
+  int value = -1;
+ 324:	8f ef       	ldi	r24, 0xFF	; 255
+ 326:	9f ef       	ldi	r25, 0xFF	; 255
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:321
+  if(rxBufferIndex < rxBufferLength){
+    value = rxBuffer[rxBufferIndex];
+  }
+
+  return value;
+}
+ 328:	08 95       	ret
+
+0000032a <TwoWire::read()>:
+read():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:301
+int TwoWire::read(void)
+{
+  int value = -1;
+
+  // get each successive byte on each call
+  if(rxBufferIndex < rxBufferLength){
+ 32a:	90 91 87 01 	lds	r25, 0x0187	; 0x800187 <TwoWire::rxBufferIndex>
+ 32e:	80 91 88 01 	lds	r24, 0x0188	; 0x800188 <TwoWire::rxBufferLength>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:298
+// must be called in:
+// slave rx event callback
+// or after requestFrom(address, numBytes)
+int TwoWire::read(void)
+{
+  int value = -1;
+ 332:	2f ef       	ldi	r18, 0xFF	; 255
+ 334:	3f ef       	ldi	r19, 0xFF	; 255
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:301
+
+  // get each successive byte on each call
+  if(rxBufferIndex < rxBufferLength){
+ 336:	98 17       	cp	r25, r24
+ 338:	48 f4       	brcc	.+18     	; 0x34c <TwoWire::read()+0x22>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:302
+    value = rxBuffer[rxBufferIndex];
+ 33a:	e9 2f       	mov	r30, r25
+ 33c:	f0 e0       	ldi	r31, 0x00	; 0
+ 33e:	e9 59       	subi	r30, 0x99	; 153
+ 340:	fe 4f       	sbci	r31, 0xFE	; 254
+ 342:	20 81       	ld	r18, Z
+ 344:	30 e0       	ldi	r19, 0x00	; 0
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:303
+    ++rxBufferIndex;
+ 346:	9f 5f       	subi	r25, 0xFF	; 255
+ 348:	90 93 87 01 	sts	0x0187, r25	; 0x800187 <TwoWire::rxBufferIndex>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:307
+  }
+
+  return value;
+}
+ 34c:	c9 01       	movw	r24, r18
+ 34e:	08 95       	ret
+
+00000350 <TwoWire::write(unsigned char const*, unsigned int)>:
+write():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:271
+
+// must be called in:
+// slave tx event callback
+// or after beginTransmission(address)
+size_t TwoWire::write(const uint8_t *data, size_t quantity)
+{
+ 350:	cf 92       	push	r12
+ 352:	df 92       	push	r13
+ 354:	ef 92       	push	r14
+ 356:	ff 92       	push	r15
+ 358:	0f 93       	push	r16
+ 35a:	1f 93       	push	r17
+ 35c:	cf 93       	push	r28
+ 35e:	df 93       	push	r29
+ 360:	7c 01       	movw	r14, r24
+ 362:	cb 01       	movw	r24, r22
+ 364:	8a 01       	movw	r16, r20
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:272
+  if(transmitting){
+ 366:	20 91 a8 01 	lds	r18, 0x01A8	; 0x8001a8 <TwoWire::transmitting>
+ 36a:	22 23       	and	r18, r18
+ 36c:	89 f0       	breq	.+34     	; 0x390 <TwoWire::write(unsigned char const*, unsigned int)+0x40>
+ 36e:	eb 01       	movw	r28, r22
+ 370:	6b 01       	movw	r12, r22
+ 372:	c4 0e       	add	r12, r20
+ 374:	d5 1e       	adc	r13, r21
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:274
+  // in master transmitter mode
+    for(size_t i = 0; i < quantity; ++i){
+ 376:	cc 15       	cp	r28, r12
+ 378:	dd 05       	cpc	r29, r13
+ 37a:	69 f0       	breq	.+26     	; 0x396 <TwoWire::write(unsigned char const*, unsigned int)+0x46>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:275
+      write(data[i]);
+ 37c:	69 91       	ld	r22, Y+
+ 37e:	d7 01       	movw	r26, r14
+ 380:	ed 91       	ld	r30, X+
+ 382:	fc 91       	ld	r31, X
+ 384:	01 90       	ld	r0, Z+
+ 386:	f0 81       	ld	r31, Z
+ 388:	e0 2d       	mov	r30, r0
+ 38a:	c7 01       	movw	r24, r14
+ 38c:	09 95       	icall
+ 38e:	f3 cf       	rjmp	.-26     	; 0x376 <TwoWire::write(unsigned char const*, unsigned int)+0x26>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:280
+    }
+  }else{
+  // in slave send mode
+    // reply to master
+    twi_transmit(data, quantity);
+ 390:	64 2f       	mov	r22, r20
+ 392:	0e 94 5e 01 	call	0x2bc	; 0x2bc <twi_transmit>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:283
+  }
+  return quantity;
+}
+ 396:	c8 01       	movw	r24, r16
+ 398:	df 91       	pop	r29
+ 39a:	cf 91       	pop	r28
+ 39c:	1f 91       	pop	r17
+ 39e:	0f 91       	pop	r16
+ 3a0:	ff 90       	pop	r15
+ 3a2:	ef 90       	pop	r14
+ 3a4:	df 90       	pop	r13
+ 3a6:	cf 90       	pop	r12
+ 3a8:	08 95       	ret
+
+000003aa <TwoWire::write(unsigned char)>:
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:246
+
+// must be called in:
+// slave tx event callback
+// or after beginTransmission(address)
+size_t TwoWire::write(uint8_t data)
+{
+ 3aa:	cf 93       	push	r28
+ 3ac:	df 93       	push	r29
+ 3ae:	1f 92       	push	r1
+ 3b0:	cd b7       	in	r28, 0x3d	; 61
+ 3b2:	de b7       	in	r29, 0x3e	; 62
+ 3b4:	69 83       	std	Y+1, r22	; 0x01
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:247
+  if(transmitting){
+ 3b6:	20 91 a8 01 	lds	r18, 0x01A8	; 0x8001a8 <TwoWire::transmitting>
+ 3ba:	22 23       	and	r18, r18
+ 3bc:	f9 f0       	breq	.+62     	; 0x3fc <TwoWire::write(unsigned char)+0x52>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:250
+  // in master transmitter mode
+    // don't bother if buffer is full
+    if(txBufferLength >= TWI_BUFFER_SIZE){
+ 3be:	20 91 cb 01 	lds	r18, 0x01CB	; 0x8001cb <TwoWire::txBufferLength>
+ 3c2:	20 32       	cpi	r18, 0x20	; 32
+ 3c4:	58 f0       	brcs	.+22     	; 0x3dc <TwoWire::write(unsigned char)+0x32>
+_ZN5Print13setWriteErrorEi():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/Print.h:44
+  private:
+    int write_error;
+    size_t printNumber(unsigned long, uint8_t);
+    size_t printFloat(double, uint8_t);
+  protected:
+    void setWriteError(int err = 1) { write_error = err; }
+ 3c6:	21 e0       	ldi	r18, 0x01	; 1
+ 3c8:	30 e0       	ldi	r19, 0x00	; 0
+ 3ca:	fc 01       	movw	r30, r24
+ 3cc:	33 83       	std	Z+3, r19	; 0x03
+ 3ce:	22 83       	std	Z+2, r18	; 0x02
+write():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:252
+      setWriteError();
+      return 0;
+ 3d0:	90 e0       	ldi	r25, 0x00	; 0
+ 3d2:	80 e0       	ldi	r24, 0x00	; 0
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:265
+  // in slave send mode
+    // reply to master
+    twi_transmit(&data, 1);
+  }
+  return 1;
+}
+ 3d4:	0f 90       	pop	r0
+ 3d6:	df 91       	pop	r29
+ 3d8:	cf 91       	pop	r28
+ 3da:	08 95       	ret
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:255
+    if(txBufferLength >= TWI_BUFFER_SIZE){
+      setWriteError();
+      return 0;
+    }
+    // put byte in tx buffer
+    txBuffer[txBufferIndex] = data;
+ 3dc:	80 91 a9 01 	lds	r24, 0x01A9	; 0x8001a9 <TwoWire::txBufferIndex>
+ 3e0:	e8 2f       	mov	r30, r24
+ 3e2:	f0 e0       	ldi	r31, 0x00	; 0
+ 3e4:	e6 55       	subi	r30, 0x56	; 86
+ 3e6:	fe 4f       	sbci	r31, 0xFE	; 254
+ 3e8:	99 81       	ldd	r25, Y+1	; 0x01
+ 3ea:	90 83       	st	Z, r25
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:256
+    ++txBufferIndex;
+ 3ec:	8f 5f       	subi	r24, 0xFF	; 255
+ 3ee:	80 93 a9 01 	sts	0x01A9, r24	; 0x8001a9 <TwoWire::txBufferIndex>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:258
+    // update amount in buffer
+    txBufferLength = txBufferIndex;
+ 3f2:	80 93 cb 01 	sts	0x01CB, r24	; 0x8001cb <TwoWire::txBufferLength>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:264
+  }else{
+  // in slave send mode
+    // reply to master
+    twi_transmit(&data, 1);
+  }
+  return 1;
+ 3f6:	81 e0       	ldi	r24, 0x01	; 1
+ 3f8:	90 e0       	ldi	r25, 0x00	; 0
+ 3fa:	ec cf       	rjmp	.-40     	; 0x3d4 <TwoWire::write(unsigned char)+0x2a>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:262
+    // update amount in buffer
+    txBufferLength = txBufferIndex;
+  }else{
+  // in slave send mode
+    // reply to master
+    twi_transmit(&data, 1);
+ 3fc:	61 e0       	ldi	r22, 0x01	; 1
+ 3fe:	ce 01       	movw	r24, r28
+ 400:	01 96       	adiw	r24, 0x01	; 1
+ 402:	0e 94 5e 01 	call	0x2bc	; 0x2bc <twi_transmit>
+ 406:	f7 cf       	rjmp	.-18     	; 0x3f6 <TwoWire::write(unsigned char)+0x4c>
+
+00000408 <Print::availableForWrite()>:
+availableForWrite():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/Print.h:63
+      return write((const uint8_t *)buffer, size);
+    }
+
+    // default to zero, meaning "a single write may block"
+    // should be overriden by subclasses with buffering
+    virtual int availableForWrite() { return 0; }
+ 408:	90 e0       	ldi	r25, 0x00	; 0
+ 40a:	80 e0       	ldi	r24, 0x00	; 0
+ 40c:	08 95       	ret
+
+0000040e <__vector_16>:
+__vector_16():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:159
+#if defined(__AVR_ATtiny24__) || defined(__AVR_ATtiny44__) || defined(__AVR_ATtiny84__)
+ISR(TIM0_OVF_vect)
+#else
+ISR(TIMER0_OVF_vect)
+#endif
+{
+ 40e:	1f 92       	push	r1
+ 410:	0f 92       	push	r0
+ 412:	0f b6       	in	r0, 0x3f	; 63
+ 414:	0f 92       	push	r0
+ 416:	11 24       	eor	r1, r1
+ 418:	2f 93       	push	r18
+ 41a:	3f 93       	push	r19
+ 41c:	8f 93       	push	r24
+ 41e:	9f 93       	push	r25
+ 420:	af 93       	push	r26
+ 422:	bf 93       	push	r27
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:167
+  static unsigned char timer0_exact = 0;
+#endif
+
+  // copy these to local variables so they can be stored in registers
+  // (volatile variables must be read from memory on every access, so this saves time)
+  unsigned long m = timer0_millis;
+ 424:	80 91 8b 01 	lds	r24, 0x018B	; 0x80018b <timer0_millis>
+ 428:	90 91 8c 01 	lds	r25, 0x018C	; 0x80018c <timer0_millis+0x1>
+ 42c:	a0 91 8d 01 	lds	r26, 0x018D	; 0x80018d <timer0_millis+0x2>
+ 430:	b0 91 8e 01 	lds	r27, 0x018E	; 0x80018e <timer0_millis+0x3>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:168
+  unsigned char f = timer0_fract;
+ 434:	30 91 8a 01 	lds	r19, 0x018A	; 0x80018a <timer0_fract>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:170
+
+  f += FRACT_INC FRACT_INC_PLUS;
+ 438:	26 e0       	ldi	r18, 0x06	; 6
+ 43a:	23 0f       	add	r18, r19
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:200
+    ++f;
+  }
+#endif
+#endif // CORRECT_EXACT_MILLIS
+
+  if (f >= FRACT_MAX) {
+ 43c:	2d 37       	cpi	r18, 0x7D	; 125
+ 43e:	68 f1       	brcs	.+90     	; 0x49a <__vector_16+0x8c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:201
+    f -= FRACT_MAX;
+ 440:	29 e8       	ldi	r18, 0x89	; 137
+ 442:	23 0f       	add	r18, r19
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:202
+    m += MILLIS_INC + 1;
+ 444:	03 96       	adiw	r24, 0x03	; 3
+ 446:	a1 1d       	adc	r26, r1
+ 448:	b1 1d       	adc	r27, r1
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:208
+  }
+  else {
+    m += MILLIS_INC;
+  }
+
+  timer0_fract = f;
+ 44a:	20 93 8a 01 	sts	0x018A, r18	; 0x80018a <timer0_fract>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:209
+  timer0_millis = m;
+ 44e:	80 93 8b 01 	sts	0x018B, r24	; 0x80018b <timer0_millis>
+ 452:	90 93 8c 01 	sts	0x018C, r25	; 0x80018c <timer0_millis+0x1>
+ 456:	a0 93 8d 01 	sts	0x018D, r26	; 0x80018d <timer0_millis+0x2>
+ 45a:	b0 93 8e 01 	sts	0x018E, r27	; 0x80018e <timer0_millis+0x3>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:211
+#ifndef CORRECT_EXACT_MICROS
+  timer0_overflow_count++;
+ 45e:	80 91 8f 01 	lds	r24, 0x018F	; 0x80018f <timer0_overflow_count>
+ 462:	90 91 90 01 	lds	r25, 0x0190	; 0x800190 <timer0_overflow_count+0x1>
+ 466:	a0 91 91 01 	lds	r26, 0x0191	; 0x800191 <timer0_overflow_count+0x2>
+ 46a:	b0 91 92 01 	lds	r27, 0x0192	; 0x800192 <timer0_overflow_count+0x3>
+ 46e:	01 96       	adiw	r24, 0x01	; 1
+ 470:	a1 1d       	adc	r26, r1
+ 472:	b1 1d       	adc	r27, r1
+ 474:	80 93 8f 01 	sts	0x018F, r24	; 0x80018f <timer0_overflow_count>
+ 478:	90 93 90 01 	sts	0x0190, r25	; 0x800190 <timer0_overflow_count+0x1>
+ 47c:	a0 93 91 01 	sts	0x0191, r26	; 0x800191 <timer0_overflow_count+0x2>
+ 480:	b0 93 92 01 	sts	0x0192, r27	; 0x800192 <timer0_overflow_count+0x3>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:213
+#endif
+}
+ 484:	bf 91       	pop	r27
+ 486:	af 91       	pop	r26
+ 488:	9f 91       	pop	r25
+ 48a:	8f 91       	pop	r24
+ 48c:	3f 91       	pop	r19
+ 48e:	2f 91       	pop	r18
+ 490:	0f 90       	pop	r0
+ 492:	0f be       	out	0x3f, r0	; 63
+ 494:	0f 90       	pop	r0
+ 496:	1f 90       	pop	r1
+ 498:	18 95       	reti
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:205
+  if (f >= FRACT_MAX) {
+    f -= FRACT_MAX;
+    m += MILLIS_INC + 1;
+  }
+  else {
+    m += MILLIS_INC;
+ 49a:	02 96       	adiw	r24, 0x02	; 2
+ 49c:	a1 1d       	adc	r26, r1
+ 49e:	b1 1d       	adc	r27, r1
+ 4a0:	d4 cf       	rjmp	.-88     	; 0x44a <__vector_16+0x3c>
+
+000004a2 <__vector_24>:
+__vector_24():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:534
+  }
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+ 4a2:	1f 92       	push	r1
+ 4a4:	0f 92       	push	r0
+ 4a6:	0f b6       	in	r0, 0x3f	; 63
+ 4a8:	0f 92       	push	r0
+ 4aa:	11 24       	eor	r1, r1
+ 4ac:	2f 93       	push	r18
+ 4ae:	3f 93       	push	r19
+ 4b0:	4f 93       	push	r20
+ 4b2:	5f 93       	push	r21
+ 4b4:	6f 93       	push	r22
+ 4b6:	7f 93       	push	r23
+ 4b8:	8f 93       	push	r24
+ 4ba:	9f 93       	push	r25
+ 4bc:	af 93       	push	r26
+ 4be:	bf 93       	push	r27
+ 4c0:	ef 93       	push	r30
+ 4c2:	ff 93       	push	r31
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:535
+  switch(TW_STATUS){
+ 4c4:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__DATA_REGION_ORIGIN__+0x59>
+ 4c8:	88 7f       	andi	r24, 0xF8	; 248
+ 4ca:	80 36       	cpi	r24, 0x60	; 96
+ 4cc:	09 f4       	brne	.+2      	; 0x4d0 <__vector_24+0x2e>
+ 4ce:	4a c0       	rjmp	.+148    	; 0x564 <__vector_24+0xc2>
+ 4d0:	f0 f5       	brcc	.+124    	; 0x54e <__vector_24+0xac>
+ 4d2:	88 32       	cpi	r24, 0x28	; 40
+ 4d4:	09 f4       	brne	.+2      	; 0x4d8 <__vector_24+0x36>
+ 4d6:	a7 c0       	rjmp	.+334    	; 0x626 <__vector_24+0x184>
+ 4d8:	18 f5       	brcc	.+70     	; 0x520 <__vector_24+0x7e>
+ 4da:	80 31       	cpi	r24, 0x10	; 16
+ 4dc:	09 f4       	brne	.+2      	; 0x4e0 <__vector_24+0x3e>
+ 4de:	9b c0       	rjmp	.+310    	; 0x616 <__vector_24+0x174>
+ 4e0:	b8 f4       	brcc	.+46     	; 0x510 <__vector_24+0x6e>
+ 4e2:	88 23       	and	r24, r24
+ 4e4:	09 f4       	brne	.+2      	; 0x4e8 <__vector_24+0x46>
+ 4e6:	05 c1       	rjmp	.+522    	; 0x6f2 <__vector_24+0x250>
+ 4e8:	88 30       	cpi	r24, 0x08	; 8
+ 4ea:	09 f4       	brne	.+2      	; 0x4ee <__vector_24+0x4c>
+ 4ec:	94 c0       	rjmp	.+296    	; 0x616 <__vector_24+0x174>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:696
+    case TW_BUS_ERROR: // bus error, illegal stop/start
+      twi_error = TW_BUS_ERROR;
+      twi_stop();
+      break;
+  }
+}
+ 4ee:	ff 91       	pop	r31
+ 4f0:	ef 91       	pop	r30
+ 4f2:	bf 91       	pop	r27
+ 4f4:	af 91       	pop	r26
+ 4f6:	9f 91       	pop	r25
+ 4f8:	8f 91       	pop	r24
+ 4fa:	7f 91       	pop	r23
+ 4fc:	6f 91       	pop	r22
+ 4fe:	5f 91       	pop	r21
+ 500:	4f 91       	pop	r20
+ 502:	3f 91       	pop	r19
+ 504:	2f 91       	pop	r18
+ 506:	0f 90       	pop	r0
+ 508:	0f be       	out	0x3f, r0	; 63
+ 50a:	0f 90       	pop	r0
+ 50c:	1f 90       	pop	r1
+ 50e:	18 95       	reti
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 510:	88 31       	cpi	r24, 0x18	; 24
+ 512:	09 f4       	brne	.+2      	; 0x516 <__vector_24+0x74>
+ 514:	88 c0       	rjmp	.+272    	; 0x626 <__vector_24+0x184>
+ 516:	80 32       	cpi	r24, 0x20	; 32
+ 518:	51 f7       	brne	.-44     	; 0x4ee <__vector_24+0x4c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:570
+    case TW_MT_SLA_NACK:  // address sent, nack received
+      twi_error = TW_MT_SLA_NACK;
+      twi_stop();
+      break;
+    case TW_MT_DATA_NACK: // data sent, nack received
+      twi_error = TW_MT_DATA_NACK;
+ 51a:	80 93 99 01 	sts	0x0199, r24	; 0x800199 <twi_error>
+ 51e:	14 c0       	rjmp	.+40     	; 0x548 <__vector_24+0xa6>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 520:	80 34       	cpi	r24, 0x40	; 64
+ 522:	09 f4       	brne	.+2      	; 0x526 <__vector_24+0x84>
+ 524:	a5 c0       	rjmp	.+330    	; 0x670 <__vector_24+0x1ce>
+ 526:	40 f4       	brcc	.+16     	; 0x538 <__vector_24+0x96>
+ 528:	80 33       	cpi	r24, 0x30	; 48
+ 52a:	b9 f3       	breq	.-18     	; 0x51a <__vector_24+0x78>
+ 52c:	88 33       	cpi	r24, 0x38	; 56
+ 52e:	f9 f6       	brne	.-66     	; 0x4ee <__vector_24+0x4c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:574
+    case TW_MT_DATA_NACK: // data sent, nack received
+      twi_error = TW_MT_DATA_NACK;
+      twi_stop();
+      break;
+    case TW_MT_ARB_LOST: // lost bus arbitration
+      twi_error = TW_MT_ARB_LOST;
+ 530:	80 93 99 01 	sts	0x0199, r24	; 0x800199 <twi_error>
+twi_reply():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:421
+ */
+void twi_reply(uint8_t ack)
+{
+  // transmit master read ready signal, with or without ack
+  if(ack){
+    TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWINT) | _BV(TWEA);
+ 534:	85 ec       	ldi	r24, 0xC5	; 197
+ 536:	bc c0       	rjmp	.+376    	; 0x6b0 <__vector_24+0x20e>
+__vector_24():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 538:	80 35       	cpi	r24, 0x50	; 80
+ 53a:	09 f4       	brne	.+2      	; 0x53e <__vector_24+0x9c>
+ 53c:	89 c0       	rjmp	.+274    	; 0x650 <__vector_24+0x1ae>
+ 53e:	88 35       	cpi	r24, 0x58	; 88
+ 540:	09 f4       	brne	.+2      	; 0x544 <__vector_24+0xa2>
+ 542:	9e c0       	rjmp	.+316    	; 0x680 <__vector_24+0x1de>
+ 544:	88 34       	cpi	r24, 0x48	; 72
+ 546:	99 f6       	brne	.-90     	; 0x4ee <__vector_24+0x4c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:693
+    // All
+    case TW_NO_INFO:   // no state information
+      break;
+    case TW_BUS_ERROR: // bus error, illegal stop/start
+      twi_error = TW_BUS_ERROR;
+      twi_stop();
+ 548:	0e 94 54 01 	call	0x2a8	; 0x2a8 <twi_stop>
+ 54c:	d0 cf       	rjmp	.-96     	; 0x4ee <__vector_24+0x4c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 54e:	88 39       	cpi	r24, 0x98	; 152
+ 550:	09 f4       	brne	.+2      	; 0x554 <__vector_24+0xb2>
+ 552:	94 c0       	rjmp	.+296    	; 0x67c <__vector_24+0x1da>
+ 554:	38 f5       	brcc	.+78     	; 0x5a4 <__vector_24+0x102>
+ 556:	88 37       	cpi	r24, 0x78	; 120
+ 558:	29 f0       	breq	.+10     	; 0x564 <__vector_24+0xc2>
+ 55a:	50 f4       	brcc	.+20     	; 0x570 <__vector_24+0xce>
+ 55c:	88 36       	cpi	r24, 0x68	; 104
+ 55e:	11 f0       	breq	.+4      	; 0x564 <__vector_24+0xc2>
+ 560:	80 37       	cpi	r24, 0x70	; 112
+ 562:	29 f6       	brne	.-118    	; 0x4ee <__vector_24+0x4c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:616
+    case TW_SR_SLA_ACK:   // addressed, returned ack
+    case TW_SR_GCALL_ACK: // addressed generally, returned ack
+    case TW_SR_ARB_LOST_SLA_ACK:   // lost arbitration, returned ack
+    case TW_SR_ARB_LOST_GCALL_ACK: // lost arbitration, returned ack
+      // enter slave receiver mode
+      twi_state = TWI_SRX;
+ 564:	83 e0       	ldi	r24, 0x03	; 3
+ 566:	80 93 9b 01 	sts	0x019B, r24	; 0x80019b <twi_state>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:618
+      // indicate that rx buffer can be overwritten and ack
+      twi_rxBufferIndex = 0;
+ 56a:	10 92 62 01 	sts	0x0162, r1	; 0x800162 <twi_rxBufferIndex>
+ 56e:	57 c0       	rjmp	.+174    	; 0x61e <__vector_24+0x17c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 570:	88 38       	cpi	r24, 0x88	; 136
+ 572:	09 f4       	brne	.+2      	; 0x576 <__vector_24+0xd4>
+ 574:	83 c0       	rjmp	.+262    	; 0x67c <__vector_24+0x1da>
+ 576:	80 39       	cpi	r24, 0x90	; 144
+ 578:	19 f0       	breq	.+6      	; 0x580 <__vector_24+0xde>
+ 57a:	80 38       	cpi	r24, 0x80	; 128
+ 57c:	09 f0       	breq	.+2      	; 0x580 <__vector_24+0xde>
+ 57e:	b7 cf       	rjmp	.-146    	; 0x4ee <__vector_24+0x4c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:624
+      twi_reply(1);
+      break;
+    case TW_SR_DATA_ACK:       // data received, returned ack
+    case TW_SR_GCALL_DATA_ACK: // data received generally, returned ack
+      // if there is still room in the rx buffer
+      if(twi_rxBufferIndex < TWI_BUFFER_SIZE){
+ 580:	80 91 62 01 	lds	r24, 0x0162	; 0x800162 <twi_rxBufferIndex>
+ 584:	80 32       	cpi	r24, 0x20	; 32
+ 586:	08 f0       	brcs	.+2      	; 0x58a <__vector_24+0xe8>
+ 588:	79 c0       	rjmp	.+242    	; 0x67c <__vector_24+0x1da>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:626
+        // put byte in buffer and ack
+        twi_rxBuffer[twi_rxBufferIndex++] = TWDR;
+ 58a:	e0 91 62 01 	lds	r30, 0x0162	; 0x800162 <twi_rxBufferIndex>
+ 58e:	81 e0       	ldi	r24, 0x01	; 1
+ 590:	8e 0f       	add	r24, r30
+ 592:	80 93 62 01 	sts	0x0162, r24	; 0x800162 <twi_rxBufferIndex>
+ 596:	80 91 bb 00 	lds	r24, 0x00BB	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
+ 59a:	f0 e0       	ldi	r31, 0x00	; 0
+ 59c:	ee 5b       	subi	r30, 0xBE	; 190
+ 59e:	fe 4f       	sbci	r31, 0xFE	; 254
+ 5a0:	80 83       	st	Z, r24
+ 5a2:	3d c0       	rjmp	.+122    	; 0x61e <__vector_24+0x17c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 5a4:	80 3b       	cpi	r24, 0xB0	; 176
+ 5a6:	39 f0       	breq	.+14     	; 0x5b6 <__vector_24+0x114>
+ 5a8:	e0 f4       	brcc	.+56     	; 0x5e2 <__vector_24+0x140>
+ 5aa:	80 3a       	cpi	r24, 0xA0	; 160
+ 5ac:	09 f4       	brne	.+2      	; 0x5b0 <__vector_24+0x10e>
+ 5ae:	85 c0       	rjmp	.+266    	; 0x6ba <__vector_24+0x218>
+ 5b0:	88 3a       	cpi	r24, 0xA8	; 168
+ 5b2:	09 f0       	breq	.+2      	; 0x5b6 <__vector_24+0x114>
+ 5b4:	9c cf       	rjmp	.-200    	; 0x4ee <__vector_24+0x4c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:655
+
+    // Slave Transmitter
+    case TW_ST_SLA_ACK:          // addressed, returned ack
+    case TW_ST_ARB_LOST_SLA_ACK: // arbitration lost, returned ack
+      // enter slave transmitter mode
+      twi_state = TWI_STX;
+ 5b6:	84 e0       	ldi	r24, 0x04	; 4
+ 5b8:	80 93 9b 01 	sts	0x019B, r24	; 0x80019b <twi_state>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:657
+      // ready the tx buffer index for iteration
+      twi_txBufferIndex = 0;
+ 5bc:	10 92 41 01 	sts	0x0141, r1	; 0x800141 <twi_txBufferIndex>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:659
+      // set tx buffer length to be zero, to verify if user changes it
+      twi_txBufferLength = 0;
+ 5c0:	10 92 40 01 	sts	0x0140, r1	; 0x800140 <twi_txBufferLength>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:662
+      // request for txBuffer to be filled and length to be set
+      // note: user must call twi_transmit(bytes, length) to do this
+      twi_onSlaveTransmit();
+ 5c4:	e0 91 65 01 	lds	r30, 0x0165	; 0x800165 <twi_onSlaveTransmit>
+ 5c8:	f0 91 66 01 	lds	r31, 0x0166	; 0x800166 <twi_onSlaveTransmit+0x1>
+ 5cc:	09 95       	icall
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:664
+      // if they didn't change buffer & length, initialize it
+      if(0 == twi_txBufferLength){
+ 5ce:	80 91 40 01 	lds	r24, 0x0140	; 0x800140 <twi_txBufferLength>
+ 5d2:	81 11       	cpse	r24, r1
+ 5d4:	0f c0       	rjmp	.+30     	; 0x5f4 <__vector_24+0x152>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:665
+        twi_txBufferLength = 1;
+ 5d6:	81 e0       	ldi	r24, 0x01	; 1
+ 5d8:	80 93 40 01 	sts	0x0140, r24	; 0x800140 <twi_txBufferLength>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:666
+        twi_txBuffer[0] = 0x00;
+ 5dc:	10 92 20 01 	sts	0x0120, r1	; 0x800120 <twi_txBuffer>
+ 5e0:	09 c0       	rjmp	.+18     	; 0x5f4 <__vector_24+0x152>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:535
+  return(flag);
+}
+
+ISR(TWI_vect)
+{
+  switch(TW_STATUS){
+ 5e2:	80 3c       	cpi	r24, 0xC0	; 192
+ 5e4:	09 f4       	brne	.+2      	; 0x5e8 <__vector_24+0x146>
+ 5e6:	a6 cf       	rjmp	.-180    	; 0x534 <__vector_24+0x92>
+ 5e8:	88 3c       	cpi	r24, 0xC8	; 200
+ 5ea:	09 f4       	brne	.+2      	; 0x5ee <__vector_24+0x14c>
+ 5ec:	a3 cf       	rjmp	.-186    	; 0x534 <__vector_24+0x92>
+ 5ee:	88 3b       	cpi	r24, 0xB8	; 184
+ 5f0:	09 f0       	breq	.+2      	; 0x5f4 <__vector_24+0x152>
+ 5f2:	7d cf       	rjmp	.-262    	; 0x4ee <__vector_24+0x4c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:672
+      }
+      // transmit first byte from buffer, fall
+      /* fall through */
+    case TW_ST_DATA_ACK: // byte sent, ack returned
+      // copy data to output register
+      TWDR = twi_txBuffer[twi_txBufferIndex++];
+ 5f4:	e0 91 41 01 	lds	r30, 0x0141	; 0x800141 <twi_txBufferIndex>
+ 5f8:	81 e0       	ldi	r24, 0x01	; 1
+ 5fa:	8e 0f       	add	r24, r30
+ 5fc:	80 93 41 01 	sts	0x0141, r24	; 0x800141 <twi_txBufferIndex>
+ 600:	f0 e0       	ldi	r31, 0x00	; 0
+ 602:	e0 5e       	subi	r30, 0xE0	; 224
+ 604:	fe 4f       	sbci	r31, 0xFE	; 254
+ 606:	80 81       	ld	r24, Z
+ 608:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:674
+      // if there is more to send, ack, otherwise nack
+      if(twi_txBufferIndex < twi_txBufferLength){
+ 60c:	90 91 41 01 	lds	r25, 0x0141	; 0x800141 <twi_txBufferIndex>
+ 610:	80 91 40 01 	lds	r24, 0x0140	; 0x800140 <twi_txBufferLength>
+ 614:	31 c0       	rjmp	.+98     	; 0x678 <__vector_24+0x1d6>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:540
+  switch(TW_STATUS){
+    // All Master
+    case TW_START:     // sent start condition
+    case TW_REP_START: // sent repeated start condition
+      // copy device address and r/w bit to output register and ack
+      TWDR = twi_slarw;
+ 616:	80 91 94 01 	lds	r24, 0x0194	; 0x800194 <twi_slarw>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:550
+    case TW_MT_SLA_ACK:  // slave receiver acked address
+    case TW_MT_DATA_ACK: // slave receiver acked data
+      // if there is data to send, send it, otherwise stop
+      if(twi_masterBufferIndex < twi_masterBufferLength){
+        // copy data to output register and ack
+        TWDR = twi_masterBuffer[twi_masterBufferIndex++];
+ 61a:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
+twi_reply():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:421
+ */
+void twi_reply(uint8_t ack)
+{
+  // transmit master read ready signal, with or without ack
+  if(ack){
+    TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWINT) | _BV(TWEA);
+ 61e:	85 ec       	ldi	r24, 0xC5	; 197
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:423
+  }else{
+    TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWINT);
+ 620:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+ 624:	64 cf       	rjmp	.-312    	; 0x4ee <__vector_24+0x4c>
+__vector_24():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:548
+
+    // Master Transmitter
+    case TW_MT_SLA_ACK:  // slave receiver acked address
+    case TW_MT_DATA_ACK: // slave receiver acked data
+      // if there is data to send, send it, otherwise stop
+      if(twi_masterBufferIndex < twi_masterBufferLength){
+ 626:	90 91 96 01 	lds	r25, 0x0196	; 0x800196 <twi_masterBufferIndex>
+ 62a:	80 91 95 01 	lds	r24, 0x0195	; 0x800195 <twi_masterBufferLength>
+ 62e:	98 17       	cp	r25, r24
+ 630:	b8 f5       	brcc	.+110    	; 0x6a0 <__vector_24+0x1fe>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:550
+        // copy data to output register and ack
+        TWDR = twi_masterBuffer[twi_masterBufferIndex++];
+ 632:	80 91 97 01 	lds	r24, 0x0197	; 0x800197 <twi_masterBuffer>
+ 636:	90 91 98 01 	lds	r25, 0x0198	; 0x800198 <twi_masterBuffer+0x1>
+ 63a:	e0 91 96 01 	lds	r30, 0x0196	; 0x800196 <twi_masterBufferIndex>
+ 63e:	21 e0       	ldi	r18, 0x01	; 1
+ 640:	2e 0f       	add	r18, r30
+ 642:	20 93 96 01 	sts	0x0196, r18	; 0x800196 <twi_masterBufferIndex>
+ 646:	e8 0f       	add	r30, r24
+ 648:	f9 2f       	mov	r31, r25
+ 64a:	f1 1d       	adc	r31, r1
+ 64c:	80 81       	ld	r24, Z
+ 64e:	e5 cf       	rjmp	.-54     	; 0x61a <__vector_24+0x178>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:581
+      break;
+
+    // Master Receiver
+    case TW_MR_DATA_ACK: // data received, ack sent
+      // put byte into buffer
+      twi_masterBuffer[twi_masterBufferIndex++] = TWDR;
+ 650:	20 91 97 01 	lds	r18, 0x0197	; 0x800197 <twi_masterBuffer>
+ 654:	30 91 98 01 	lds	r19, 0x0198	; 0x800198 <twi_masterBuffer+0x1>
+ 658:	e0 91 96 01 	lds	r30, 0x0196	; 0x800196 <twi_masterBufferIndex>
+ 65c:	81 e0       	ldi	r24, 0x01	; 1
+ 65e:	8e 0f       	add	r24, r30
+ 660:	80 93 96 01 	sts	0x0196, r24	; 0x800196 <twi_masterBufferIndex>
+ 664:	80 91 bb 00 	lds	r24, 0x00BB	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
+ 668:	e2 0f       	add	r30, r18
+ 66a:	f3 2f       	mov	r31, r19
+ 66c:	f1 1d       	adc	r31, r1
+ 66e:	80 83       	st	Z, r24
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:585
+      /* fall through */
+    case TW_MR_SLA_ACK:  // address sent, ack received
+      // ack if more bytes are expected, otherwise nack
+      if(twi_masterBufferIndex < twi_masterBufferLength){
+ 670:	90 91 96 01 	lds	r25, 0x0196	; 0x800196 <twi_masterBufferIndex>
+ 674:	80 91 95 01 	lds	r24, 0x0195	; 0x800195 <twi_masterBufferLength>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:674
+      /* fall through */
+    case TW_ST_DATA_ACK: // byte sent, ack returned
+      // copy data to output register
+      TWDR = twi_txBuffer[twi_txBufferIndex++];
+      // if there is more to send, ack, otherwise nack
+      if(twi_txBufferIndex < twi_txBufferLength){
+ 678:	98 17       	cp	r25, r24
+ 67a:	88 f2       	brcs	.-94     	; 0x61e <__vector_24+0x17c>
+twi_reply():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:423
+{
+  // transmit master read ready signal, with or without ack
+  if(ack){
+    TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWINT) | _BV(TWEA);
+  }else{
+    TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWINT);
+ 67c:	85 e8       	ldi	r24, 0x85	; 133
+ 67e:	d0 cf       	rjmp	.-96     	; 0x620 <__vector_24+0x17e>
+__vector_24():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:593
+        twi_reply(0);
+      }
+      break;
+    case TW_MR_DATA_NACK: // data received, nack sent
+      // put final byte into buffer
+      twi_masterBuffer[twi_masterBufferIndex++] = TWDR;
+ 680:	20 91 97 01 	lds	r18, 0x0197	; 0x800197 <twi_masterBuffer>
+ 684:	30 91 98 01 	lds	r19, 0x0198	; 0x800198 <twi_masterBuffer+0x1>
+ 688:	e0 91 96 01 	lds	r30, 0x0196	; 0x800196 <twi_masterBufferIndex>
+ 68c:	81 e0       	ldi	r24, 0x01	; 1
+ 68e:	8e 0f       	add	r24, r30
+ 690:	80 93 96 01 	sts	0x0196, r24	; 0x800196 <twi_masterBufferIndex>
+ 694:	80 91 bb 00 	lds	r24, 0x00BB	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
+ 698:	e2 0f       	add	r30, r18
+ 69a:	f3 2f       	mov	r31, r19
+ 69c:	f1 1d       	adc	r31, r1
+ 69e:	80 83       	st	Z, r24
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:594
+  if (twi_sendStop)
+ 6a0:	80 91 9a 01 	lds	r24, 0x019A	; 0x80019a <twi_sendStop>
+ 6a4:	81 11       	cpse	r24, r1
+ 6a6:	50 cf       	rjmp	.-352    	; 0x548 <__vector_24+0xa6>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:597
+          twi_stop();
+  else {
+    twi_inRepStart = true;  // we're going to send the START
+ 6a8:	81 e0       	ldi	r24, 0x01	; 1
+ 6aa:	80 93 93 01 	sts	0x0193, r24	; 0x800193 <twi_inRepStart>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:601
+    // don't enable the interrupt. We'll generate the start, but we
+    // avoid handling the interrupt until we're in the next transaction,
+    // at the point where we would normally issue the start.
+    TWCR = _BV(TWINT) | _BV(TWSTA)| _BV(TWEN) ;
+ 6ae:	84 ea       	ldi	r24, 0xA4	; 164
+twi_reply():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:421
+ */
+void twi_reply(uint8_t ack)
+{
+  // transmit master read ready signal, with or without ack
+  if(ack){
+    TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWINT) | _BV(TWEA);
+ 6b0:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+__vector_24():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:685
+    case TW_ST_DATA_NACK: // received nack, we are done
+    case TW_ST_LAST_DATA: // received ack, but we are done already!
+      // ack future responses
+      twi_reply(1);
+      // leave slave receiver state
+      twi_state = TWI_READY;
+ 6b4:	10 92 9b 01 	sts	0x019B, r1	; 0x80019b <twi_state>
+ 6b8:	1a cf       	rjmp	.-460    	; 0x4ee <__vector_24+0x4c>
+twi_releaseBus():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:474
+ * Output   none
+ */
+void twi_releaseBus(void)
+{
+  // release bus
+  TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWEA) | _BV(TWINT);
+ 6ba:	85 ec       	ldi	r24, 0xC5	; 197
+ 6bc:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:477
+
+  // update twi state
+  twi_state = TWI_READY;
+ 6c0:	10 92 9b 01 	sts	0x019B, r1	; 0x80019b <twi_state>
+__vector_24():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:637
+      break;
+    case TW_SR_STOP: // stop or repeated start condition received
+      // ack future responses and leave slave receiver state
+      twi_releaseBus();
+      // put a null char after data if there's room
+      if(twi_rxBufferIndex < TWI_BUFFER_SIZE){
+ 6c4:	80 91 62 01 	lds	r24, 0x0162	; 0x800162 <twi_rxBufferIndex>
+ 6c8:	80 32       	cpi	r24, 0x20	; 32
+ 6ca:	30 f4       	brcc	.+12     	; 0x6d8 <__vector_24+0x236>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:638
+        twi_rxBuffer[twi_rxBufferIndex] = '\0';
+ 6cc:	e0 91 62 01 	lds	r30, 0x0162	; 0x800162 <twi_rxBufferIndex>
+ 6d0:	f0 e0       	ldi	r31, 0x00	; 0
+ 6d2:	ee 5b       	subi	r30, 0xBE	; 190
+ 6d4:	fe 4f       	sbci	r31, 0xFE	; 254
+ 6d6:	10 82       	st	Z, r1
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:641
+      }
+      // callback to user defined callback
+      twi_onSlaveReceive(twi_rxBuffer, twi_rxBufferIndex);
+ 6d8:	60 91 62 01 	lds	r22, 0x0162	; 0x800162 <twi_rxBufferIndex>
+ 6dc:	70 e0       	ldi	r23, 0x00	; 0
+ 6de:	e0 91 63 01 	lds	r30, 0x0163	; 0x800163 <twi_onSlaveReceive>
+ 6e2:	f0 91 64 01 	lds	r31, 0x0164	; 0x800164 <twi_onSlaveReceive+0x1>
+ 6e6:	82 e4       	ldi	r24, 0x42	; 66
+ 6e8:	91 e0       	ldi	r25, 0x01	; 1
+ 6ea:	09 95       	icall
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:643
+      // since we submit rx buffer to "wire" library, we can reset it
+      twi_rxBufferIndex = 0;
+ 6ec:	10 92 62 01 	sts	0x0162, r1	; 0x800162 <twi_rxBufferIndex>
+ 6f0:	fe ce       	rjmp	.-516    	; 0x4ee <__vector_24+0x4c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:692
+
+    // All
+    case TW_NO_INFO:   // no state information
+      break;
+    case TW_BUS_ERROR: // bus error, illegal stop/start
+      twi_error = TW_BUS_ERROR;
+ 6f2:	10 92 99 01 	sts	0x0199, r1	; 0x800199 <twi_error>
+ 6f6:	28 cf       	rjmp	.-432    	; 0x548 <__vector_24+0xa6>
+
+000006f8 <main>:
+init():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:945
+
+void init()
+{
+  // this needs to be called before setup() or some functions won't
+  // work there
+  sei();
+ 6f8:	78 94       	sei
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:957
+
+  // On the ATmega168, timer 0 is also used for fast hardware pwm
+  // (using phase-correct PWM would mean that timer 0 overflowed half as often
+  // resulting in different millis() behavior on the ATmega8 and ATmega168)
+#if defined(TCCR0A) && defined(WGM01)
+  TCCR0A |= _BV(WGM01) | _BV(WGM00);
+ 6fa:	84 b5       	in	r24, 0x24	; 36
+ 6fc:	83 60       	ori	r24, 0x03	; 3
+ 6fe:	84 bd       	out	0x24, r24	; 36
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:972
+  #if defined(WGM00) && defined(WGM01) // The ATmega8 doesn't have WGM00 and WGM01
+    TCCR0 |= _BV(WGM01) | _BV(WGM00);
+  #endif
+#elif defined(TCCR0B) && defined(CS01) && defined(CS00)
+  // This combination is for the standard 168/328/640/1280/1281/2560/2561
+  TCCR0B |= _BV(CS01) | _BV(CS00);
+ 700:	85 b5       	in	r24, 0x25	; 37
+ 702:	83 60       	ori	r24, 0x03	; 3
+ 704:	85 bd       	out	0x25, r24	; 37
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:984
+
+// Enable timer 0 overflow interrupt
+#if defined(TIMSK) && defined(TOIE0)
+  TIMSK |= _BV(TOIE0);
+#elif defined(TIMSK0) && defined(TOIE0)
+  TIMSK0 |= _BV(TOIE0);
+ 706:	80 91 6e 00 	lds	r24, 0x006E	; 0x80006e <__DATA_REGION_ORIGIN__+0xe>
+ 70a:	81 60       	ori	r24, 0x01	; 1
+ 70c:	80 93 6e 00 	sts	0x006E, r24	; 0x80006e <__DATA_REGION_ORIGIN__+0xe>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:995
+// this is better for motors as it ensures an even waveform
+// note, however, that fast pwm mode can achieve a frequency of up
+// 8 MHz (with a 16 MHz clock) at 50% duty cycle
+
+#if defined(TCCR1B) && defined(CS11) && defined(CS10)
+  TCCR1B = _BV(CS11); // Set timer 1 prescale factor to 64
+ 710:	82 e0       	ldi	r24, 0x02	; 2
+ 712:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <__DATA_REGION_ORIGIN__+0x21>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:997
+#if F_CPU >= 8000000L
+  TCCR1B |= _BV(CS10);
+ 716:	80 91 81 00 	lds	r24, 0x0081	; 0x800081 <__DATA_REGION_ORIGIN__+0x21>
+ 71a:	81 60       	ori	r24, 0x01	; 1
+ 71c:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <__DATA_REGION_ORIGIN__+0x21>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1006
+#if F_CPU >= 8000000L
+  TCCR1 |= _BV(CS10);
+#endif
+#endif
+#if defined(TCCR1A) && defined(WGM10)
+  TCCR1A |= _BV(WGM10); // Put timer 1 in 8-bit phase correct pwm mode
+ 720:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 724:	81 60       	ori	r24, 0x01	; 1
+ 726:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1013
+
+// Set timer 2 prescale factor to 64
+#if defined(TCCR2) && defined(CS22)
+  TCCR2 |= _BV(CS22);
+#elif defined(TCCR2B) && defined(CS22)
+  TCCR2B |= _BV(CS22);
+ 72a:	80 91 b1 00 	lds	r24, 0x00B1	; 0x8000b1 <__DATA_REGION_ORIGIN__+0x51>
+ 72e:	84 60       	ori	r24, 0x04	; 4
+ 730:	80 93 b1 00 	sts	0x00B1, r24	; 0x8000b1 <__DATA_REGION_ORIGIN__+0x51>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1022
+
+// Configure timer 2 for phase correct pwm (8-bit)
+#if defined(TCCR2) && defined(WGM20)
+  TCCR2 |= _BV(WGM20);
+#elif defined(TCCR2A) && defined(WGM20)
+  TCCR2A |= _BV(WGM20);
+ 734:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 738:	81 60       	ori	r24, 0x01	; 1
+ 73a:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1052
+#if defined(ADCSRA)
+  // set a2d prescaler so we are inside the desired 50-200 KHz range.
+  #if F_CPU >= 16000000 // 16 MHz / 128 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS1) | _BV(ADPS0) | _BV(ADEN);
+  #elif F_CPU >= 8000000 // 8 MHz / 64 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS1) | _BV(ADEN);
+ 73e:	86 e8       	ldi	r24, 0x86	; 134
+ 740:	80 93 7a 00 	sts	0x007A, r24	; 0x80007a <__DATA_REGION_ORIGIN__+0x1a>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1070
+  // here so they can be used as normal digital i/o; they will be
+  // reconnected in Serial.begin()
+#if defined(UCSRB)
+  UCSRB = 0;
+#elif defined(UCSR0B)
+  UCSR0B = 0;
+ 744:	10 92 c1 00 	sts	0x00C1, r1	; 0x8000c1 <__DATA_REGION_ORIGIN__+0x61>
+begin():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:61
+
+// Public Methods //////////////////////////////////////////////////////////////
+
+void TwoWire::begin(void)
+{
+  rxBufferIndex = 0;
+ 748:	10 92 87 01 	sts	0x0187, r1	; 0x800187 <TwoWire::rxBufferIndex>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:62
+  rxBufferLength = 0;
+ 74c:	10 92 88 01 	sts	0x0188, r1	; 0x800188 <TwoWire::rxBufferLength>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:64
+
+  txBufferIndex = 0;
+ 750:	10 92 a9 01 	sts	0x01A9, r1	; 0x8001a9 <TwoWire::txBufferIndex>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:65
+  txBufferLength = 0;
+ 754:	10 92 cb 01 	sts	0x01CB, r1	; 0x8001cb <TwoWire::txBufferLength>
+twi_init():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:84
+ * Output   none
+ */
+void twi_init(void)
+{
+  // initialize state
+  twi_state = TWI_READY;
+ 758:	10 92 9b 01 	sts	0x019B, r1	; 0x80019b <twi_state>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:85
+  twi_sendStop = true; // default value
+ 75c:	c1 e0       	ldi	r28, 0x01	; 1
+ 75e:	c0 93 9a 01 	sts	0x019A, r28	; 0x80019a <twi_sendStop>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:86
+  twi_inRepStart = false;
+ 762:	10 92 93 01 	sts	0x0193, r1	; 0x800193 <twi_inRepStart>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:89
+
+  // activate internal pullups for twi.
+  digitalWrite(SDA, 1);
+ 766:	82 e1       	ldi	r24, 0x12	; 18
+ 768:	0e 94 df 00 	call	0x1be	; 0x1be <digitalWrite.constprop.9>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:90
+  digitalWrite(SCL, 1);
+ 76c:	83 e1       	ldi	r24, 0x13	; 19
+ 76e:	0e 94 df 00 	call	0x1be	; 0x1be <digitalWrite.constprop.9>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:93
+
+  // initialize twi prescaler and bit rate
+  cbi(TWSR, TWPS0);
+ 772:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__DATA_REGION_ORIGIN__+0x59>
+ 776:	8e 7f       	andi	r24, 0xFE	; 254
+ 778:	80 93 b9 00 	sts	0x00B9, r24	; 0x8000b9 <__DATA_REGION_ORIGIN__+0x59>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:94
+  cbi(TWSR, TWPS1);
+ 77c:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__DATA_REGION_ORIGIN__+0x59>
+ 780:	8d 7f       	andi	r24, 0xFD	; 253
+ 782:	80 93 b9 00 	sts	0x00B9, r24	; 0x8000b9 <__DATA_REGION_ORIGIN__+0x59>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:95
+  TWBR = ((F_CPU / TWI_FREQ) - 16) / 2;
+ 786:	80 e2       	ldi	r24, 0x20	; 32
+ 788:	80 93 b8 00 	sts	0x00B8, r24	; 0x8000b8 <__DATA_REGION_ORIGIN__+0x58>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:103
+  SCL Frequency = CPU Clock Frequency / (16 + (2 * TWBR))
+  note: TWBR should be 10 or higher for master mode
+  It is 72 for a 16mhz Wiring board with 100kHz TWI */
+
+  // enable twi module, acks, and twi interrupt
+  TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWEA);
+ 78c:	95 e4       	ldi	r25, 0x45	; 69
+ 78e:	90 93 bc 00 	sts	0x00BC, r25	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+twi_attachSlaveTxEvent():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:408
+ * Input    function: callback function to use
+ * Output   none
+ */
+void twi_attachSlaveTxEvent( void (*function)(void) )
+{
+  twi_onSlaveTransmit = function;
+ 792:	22 e5       	ldi	r18, 0x52	; 82
+ 794:	31 e0       	ldi	r19, 0x01	; 1
+ 796:	30 93 66 01 	sts	0x0166, r19	; 0x800166 <twi_onSlaveTransmit+0x1>
+ 79a:	20 93 65 01 	sts	0x0165, r18	; 0x800165 <twi_onSlaveTransmit>
+twi_attachSlaveRxEvent():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:397
+ * Input    function: callback function to use
+ * Output   none
+ */
+void twi_attachSlaveRxEvent( void (*function)(uint8_t*, int) )
+{
+  twi_onSlaveReceive = function;
+ 79e:	23 e5       	ldi	r18, 0x53	; 83
+ 7a0:	31 e0       	ldi	r19, 0x01	; 1
+ 7a2:	30 93 64 01 	sts	0x0164, r19	; 0x800164 <twi_onSlaveReceive+0x1>
+ 7a6:	20 93 63 01 	sts	0x0163, r18	; 0x800163 <twi_onSlaveReceive>
+beginTransmission():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:196
+}
+
+void TwoWire::beginTransmission(uint8_t address)
+{
+  // indicate that we are transmitting
+  transmitting = 1;
+ 7aa:	c0 93 a8 01 	sts	0x01A8, r28	; 0x8001a8 <TwoWire::transmitting>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:198
+  // set address of targeted slave
+  txAddress = address;
+ 7ae:	80 93 ca 01 	sts	0x01CA, r24	; 0x8001ca <TwoWire::txAddress>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:200
+  // reset tx buffer iterator vars
+  txBufferIndex = 0;
+ 7b2:	10 92 a9 01 	sts	0x01A9, r1	; 0x8001a9 <TwoWire::txBufferIndex>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:201
+  txBufferLength = 0;
+ 7b6:	10 92 cb 01 	sts	0x01CB, r1	; 0x8001cb <TwoWire::txBufferLength>
+write():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.h:87
+    void onRequest( void (*)(void) );
+
+    inline size_t write(unsigned long n) { return write((uint8_t)n); }
+    inline size_t write(long n) { return write((uint8_t)n); }
+    inline size_t write(unsigned int n) { return write((uint8_t)n); }
+    inline size_t write(int n) { return write((uint8_t)n); }
+ 7ba:	6f ef       	ldi	r22, 0xFF	; 255
+ 7bc:	8c e9       	ldi	r24, 0x9C	; 156
+ 7be:	91 e0       	ldi	r25, 0x01	; 1
+ 7c0:	0e 94 d5 01 	call	0x3aa	; 0x3aa <TwoWire::write(unsigned char)>
+endTransmission():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:239
+//  This provides backwards compatibility with the original
+//  definition, and expected behaviour, of endTransmission
+//
+uint8_t TwoWire::endTransmission(void)
+{
+  return endTransmission(true);
+ 7c4:	81 e0       	ldi	r24, 0x01	; 1
+ 7c6:	0e 94 87 00 	call	0x10e	; 0x10e <TwoWire::endTransmission(unsigned char) [clone .constprop.15]>
+ 7ca:	0a e1       	ldi	r16, 0x1A	; 26
+ 7cc:	11 e0       	ldi	r17, 0x01	; 1
+ 7ce:	81 2c       	mov	r8, r1
+ 7d0:	91 2c       	mov	r9, r1
+ 7d2:	54 01       	movw	r10, r8
+ 7d4:	83 94       	inc	r8
+main():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/main.cpp:47
+  
+  setup();
+    
+  for (;;) {
+    loop();
+    if (serialEventRun) serialEventRun();
+ 7d6:	40 e0       	ldi	r20, 0x00	; 0
+ 7d8:	24 2e       	mov	r2, r20
+ 7da:	40 e0       	ldi	r20, 0x00	; 0
+ 7dc:	34 2e       	mov	r3, r20
+twi_readFrom():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:184
+    }
+  #endif
+  twi_state = TWI_MRX;
+  twi_sendStop = sendStop;
+  // reset error state (0xFF.. no error occurred)
+  twi_error = 0xFF;
+ 7de:	df ef       	ldi	r29, 0xFF	; 255
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:177
+        twi_handleTimeout(twi_do_reset_on_timeout);
+        return 0;
+      }
+    }
+  #else
+    while(TWI_READY != twi_state){
+ 7e0:	80 91 9b 01 	lds	r24, 0x019B	; 0x80019b <twi_state>
+ 7e4:	81 11       	cpse	r24, r1
+ 7e6:	fc cf       	rjmp	.-8      	; 0x7e0 <main+0xe8>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:181
+      continue;
+    }
+  #endif
+  twi_state = TWI_MRX;
+ 7e8:	c0 93 9b 01 	sts	0x019B, r28	; 0x80019b <twi_state>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:182
+  twi_sendStop = sendStop;
+ 7ec:	c0 93 9a 01 	sts	0x019A, r28	; 0x80019a <twi_sendStop>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:184
+  // reset error state (0xFF.. no error occurred)
+  twi_error = 0xFF;
+ 7f0:	d0 93 99 01 	sts	0x0199, r29	; 0x800199 <twi_error>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:187
+
+  // initialize buffer iteration vars
+  twi_masterBuffer = data;
+ 7f4:	87 e6       	ldi	r24, 0x67	; 103
+ 7f6:	91 e0       	ldi	r25, 0x01	; 1
+ 7f8:	90 93 98 01 	sts	0x0198, r25	; 0x800198 <twi_masterBuffer+0x1>
+ 7fc:	80 93 97 01 	sts	0x0197, r24	; 0x800197 <twi_masterBuffer>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:188
+  twi_masterBufferIndex = 0;
+ 800:	10 92 96 01 	sts	0x0196, r1	; 0x800196 <twi_masterBufferIndex>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:189
+  twi_masterBufferLength = length-1;  // This is not intuitive, read on...
+ 804:	10 92 95 01 	sts	0x0195, r1	; 0x800195 <twi_masterBufferLength>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:197
+  // Therefore we must actually set NACK when the _next_ to last byte is
+  // received, causing that NACK to be sent in response to receiving the last
+  // expected byte of data.
+
+  // build sla+w, slave device address + w bit
+  twi_slarw = TW_READ;
+ 808:	c0 93 94 01 	sts	0x0194, r28	; 0x800194 <twi_slarw>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:198
+  twi_slarw |= address << 1;
+ 80c:	80 91 94 01 	lds	r24, 0x0194	; 0x800194 <twi_slarw>
+ 810:	80 64       	ori	r24, 0x40	; 64
+ 812:	80 93 94 01 	sts	0x0194, r24	; 0x800194 <twi_slarw>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:200
+
+  if (true == twi_inRepStart) {
+ 816:	80 91 93 01 	lds	r24, 0x0193	; 0x800193 <twi_inRepStart>
+ 81a:	81 30       	cpi	r24, 0x01	; 1
+ 81c:	09 f0       	breq	.+2      	; 0x820 <main+0x128>
+ 81e:	9a c0       	rjmp	.+308    	; 0x954 <__stack+0x55>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:207
+    // (@@@ we hope), and the TWI statemachine is just waiting for the address byte.
+    // We need to remove ourselves from the repeated start state before we enable interrupts,
+    // since the ISR is ASYNC, and we could get confused if we hit the ISR before cleaning
+    // up. Also, don't enable the START interrupt. There may be one pending from the
+    // repeated start that we sent ourselves, and that would really confuse things.
+    twi_inRepStart = false; // Remember, we're dealing with an ASYNC ISR
+ 820:	10 92 93 01 	sts	0x0193, r1	; 0x800193 <twi_inRepStart>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:219
+          return 0;
+        }
+      } while(TWCR & _BV(TWWC));
+    #else
+      do {
+        TWDR = twi_slarw;
+ 824:	80 91 94 01 	lds	r24, 0x0194	; 0x800194 <twi_slarw>
+ 828:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:220
+      } while(TWCR & _BV(TWWC));
+ 82c:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+ 830:	83 fd       	sbrc	r24, 3
+ 832:	f8 cf       	rjmp	.-16     	; 0x824 <main+0x12c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:222
+    #endif
+    TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE);  // enable INTs, but not START
+ 834:	95 ec       	ldi	r25, 0xC5	; 197
+ 836:	90 93 bc 00 	sts	0x00BC, r25	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:238
+        twi_handleTimeout(twi_do_reset_on_timeout);
+        return 0;
+      }
+    }
+  #else
+    while(TWI_MRX == twi_state){
+ 83a:	80 91 9b 01 	lds	r24, 0x019B	; 0x80019b <twi_state>
+ 83e:	81 30       	cpi	r24, 0x01	; 1
+ 840:	e1 f3       	breq	.-8      	; 0x83a <main+0x142>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:243
+      continue;
+    }
+  #endif
+
+  if (twi_masterBufferIndex < length)
+ 842:	80 91 96 01 	lds	r24, 0x0196	; 0x800196 <twi_masterBufferIndex>
+ 846:	81 11       	cpse	r24, r1
+ 848:	89 c0       	rjmp	.+274    	; 0x95c <__stack+0x5d>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:244
+    length = twi_masterBufferIndex;
+ 84a:	80 91 96 01 	lds	r24, 0x0196	; 0x800196 <twi_masterBufferIndex>
+requestFrom():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:120
+    quantity = TWI_BUFFER_SIZE;
+  }
+  // perform blocking read into buffer
+  uint8_t read = twi_readFrom(address, rxBuffer, quantity, sendStop);
+  // set rx buffer iterator vars
+  rxBufferIndex = 0;
+ 84e:	10 92 87 01 	sts	0x0187, r1	; 0x800187 <TwoWire::rxBufferIndex>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:121
+  rxBufferLength = read;
+ 852:	80 93 88 01 	sts	0x0188, r24	; 0x800188 <TwoWire::rxBufferLength>
+loop():
+C:\Users\Amjad\Desktop\Articles\PCF8574 (I2C Port Expander)\sketch_oct20a/sketch_oct20a.ino:22
+
+void loop() {
+
+  Wire.requestFrom(PCF_ADDRESS, 1);
+
+  if (Wire.available()) {
+ 856:	88 23       	and	r24, r24
+ 858:	09 f4       	brne	.+2      	; 0x85c <main+0x164>
+ 85a:	51 c0       	rjmp	.+162    	; 0x8fe <main+0x206>
+C:\Users\Amjad\Desktop\Articles\PCF8574 (I2C Port Expander)\sketch_oct20a/sketch_oct20a.ino:24
+
+    pins = Wire.read();
+ 85c:	8c e9       	ldi	r24, 0x9C	; 156
+ 85e:	91 e0       	ldi	r25, 0x01	; 1
+ 860:	0e 94 95 01 	call	0x32a	; 0x32a <TwoWire::read()>
+ 864:	80 93 89 01 	sts	0x0189, r24	; 0x800189 <pins>
+ 868:	96 e1       	ldi	r25, 0x16	; 22
+ 86a:	c9 2e       	mov	r12, r25
+ 86c:	91 e0       	ldi	r25, 0x01	; 1
+ 86e:	d9 2e       	mov	r13, r25
+ 870:	22 e1       	ldi	r18, 0x12	; 18
+ 872:	e2 2e       	mov	r14, r18
+ 874:	21 e0       	ldi	r18, 0x01	; 1
+ 876:	f2 2e       	mov	r15, r18
+C:\Users\Amjad\Desktop\Articles\PCF8574 (I2C Port Expander)\sketch_oct20a/sketch_oct20a.ino:28
+    
+    for (int i = 0; i < 4; i++) {
+
+      if (bitRead(pins, buttonIdx[i]) == 0)
+ 878:	20 91 89 01 	lds	r18, 0x0189	; 0x800189 <pins>
+ 87c:	f6 01       	movw	r30, r12
+ 87e:	31 91       	ld	r19, Z+
+ 880:	6f 01       	movw	r12, r30
+ 882:	f7 01       	movw	r30, r14
+ 884:	81 91       	ld	r24, Z+
+ 886:	7f 01       	movw	r14, r30
+ 888:	b5 01       	movw	r22, r10
+ 88a:	a4 01       	movw	r20, r8
+ 88c:	04 c0       	rjmp	.+8      	; 0x896 <main+0x19e>
+ 88e:	44 0f       	add	r20, r20
+ 890:	55 1f       	adc	r21, r21
+ 892:	66 1f       	adc	r22, r22
+ 894:	77 1f       	adc	r23, r23
+ 896:	8a 95       	dec	r24
+ 898:	d2 f7       	brpl	.-12     	; 0x88e <main+0x196>
+ 89a:	82 2f       	mov	r24, r18
+ 89c:	02 2e       	mov	r0, r18
+ 89e:	00 0c       	add	r0, r0
+ 8a0:	99 0b       	sbc	r25, r25
+ 8a2:	03 2e       	mov	r0, r19
+ 8a4:	02 c0       	rjmp	.+4      	; 0x8aa <main+0x1b2>
+ 8a6:	95 95       	asr	r25
+ 8a8:	87 95       	ror	r24
+ 8aa:	0a 94       	dec	r0
+ 8ac:	e2 f7       	brpl	.-8      	; 0x8a6 <main+0x1ae>
+ 8ae:	80 fd       	sbrc	r24, 0
+ 8b0:	57 c0       	rjmp	.+174    	; 0x960 <__stack+0x61>
+updatePin():
+C:\Users\Amjad\Desktop\Articles\PCF8574 (I2C Port Expander)\sketch_oct20a/Functions.ino:2
+void updatePin(unsigned char index, boolean value){
+  bitWrite(pins, index, value);
+ 8b2:	40 95       	com	r20
+ 8b4:	24 23       	and	r18, r20
+ 8b6:	20 93 89 01 	sts	0x0189, r18	; 0x800189 <pins>
+returnInput():
+C:\Users\Amjad\Desktop\Articles\PCF8574 (I2C Port Expander)\sketch_oct20a/Functions.ino:11
+  updatePin(index, value);
+  sendTransmission(pins);
+}
+
+void returnInput(unsigned char index){
+  bitSet(pins, index);
+ 8ba:	d5 01       	movw	r26, r10
+ 8bc:	c4 01       	movw	r24, r8
+ 8be:	04 c0       	rjmp	.+8      	; 0x8c8 <main+0x1d0>
+ 8c0:	88 0f       	add	r24, r24
+ 8c2:	99 1f       	adc	r25, r25
+ 8c4:	aa 1f       	adc	r26, r26
+ 8c6:	bb 1f       	adc	r27, r27
+ 8c8:	3a 95       	dec	r19
+ 8ca:	d2 f7       	brpl	.-12     	; 0x8c0 <main+0x1c8>
+ 8cc:	60 91 89 01 	lds	r22, 0x0189	; 0x800189 <pins>
+ 8d0:	68 2b       	or	r22, r24
+ 8d2:	60 93 89 01 	sts	0x0189, r22	; 0x800189 <pins>
+beginTransmission():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:196
+}
+
+void TwoWire::beginTransmission(uint8_t address)
+{
+  // indicate that we are transmitting
+  transmitting = 1;
+ 8d6:	c0 93 a8 01 	sts	0x01A8, r28	; 0x8001a8 <TwoWire::transmitting>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:198
+  // set address of targeted slave
+  txAddress = address;
+ 8da:	f0 e2       	ldi	r31, 0x20	; 32
+ 8dc:	f0 93 ca 01 	sts	0x01CA, r31	; 0x8001ca <TwoWire::txAddress>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:200
+  // reset tx buffer iterator vars
+  txBufferIndex = 0;
+ 8e0:	10 92 a9 01 	sts	0x01A9, r1	; 0x8001a9 <TwoWire::txBufferIndex>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:201
+  txBufferLength = 0;
+ 8e4:	10 92 cb 01 	sts	0x01CB, r1	; 0x8001cb <TwoWire::txBufferLength>
+write():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.h:86
+    void onReceive( void (*)(int) );
+    void onRequest( void (*)(void) );
+
+    inline size_t write(unsigned long n) { return write((uint8_t)n); }
+    inline size_t write(long n) { return write((uint8_t)n); }
+    inline size_t write(unsigned int n) { return write((uint8_t)n); }
+ 8e8:	8c e9       	ldi	r24, 0x9C	; 156
+ 8ea:	91 e0       	ldi	r25, 0x01	; 1
+ 8ec:	0e 94 d5 01 	call	0x3aa	; 0x3aa <TwoWire::write(unsigned char)>
+endTransmission():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:239
+//  This provides backwards compatibility with the original
+//  definition, and expected behaviour, of endTransmission
+//
+uint8_t TwoWire::endTransmission(void)
+{
+  return endTransmission(true);
+ 8f0:	81 e0       	ldi	r24, 0x01	; 1
+ 8f2:	0e 94 87 00 	call	0x10e	; 0x10e <TwoWire::endTransmission(unsigned char) [clone .constprop.15]>
+loop():
+C:\Users\Amjad\Desktop\Articles\PCF8574 (I2C Port Expander)\sketch_oct20a/sketch_oct20a.ino:26
+
+  if (Wire.available()) {
+
+    pins = Wire.read();
+    
+    for (int i = 0; i < 4; i++) {
+ 8f6:	0c 15       	cp	r16, r12
+ 8f8:	1d 05       	cpc	r17, r13
+ 8fa:	09 f0       	breq	.+2      	; 0x8fe <main+0x206>
+ 8fc:	bd cf       	rjmp	.-134    	; 0x878 <main+0x180>
+delay():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:397
+#endif // 0
+}
+
+void delay(unsigned long ms)
+{
+  unsigned long start = micros();
+ 8fe:	0e 94 26 01 	call	0x24c	; 0x24c <micros>
+ 902:	2b 01       	movw	r4, r22
+ 904:	3c 01       	movw	r6, r24
+ 906:	84 e6       	ldi	r24, 0x64	; 100
+ 908:	c8 2e       	mov	r12, r24
+ 90a:	d1 2c       	mov	r13, r1
+ 90c:	e1 2c       	mov	r14, r1
+ 90e:	f1 2c       	mov	r15, r1
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:401
+
+  while (ms > 0UL) {
+    yield();
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 910:	0e 94 26 01 	call	0x24c	; 0x24c <micros>
+ 914:	64 19       	sub	r22, r4
+ 916:	75 09       	sbc	r23, r5
+ 918:	86 09       	sbc	r24, r6
+ 91a:	97 09       	sbc	r25, r7
+ 91c:	68 3e       	cpi	r22, 0xE8	; 232
+ 91e:	73 40       	sbci	r23, 0x03	; 3
+ 920:	81 05       	cpc	r24, r1
+ 922:	91 05       	cpc	r25, r1
+ 924:	a8 f3       	brcs	.-22     	; 0x910 <__stack+0x11>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:402
+      ms--;
+ 926:	21 e0       	ldi	r18, 0x01	; 1
+ 928:	c2 1a       	sub	r12, r18
+ 92a:	d1 08       	sbc	r13, r1
+ 92c:	e1 08       	sbc	r14, r1
+ 92e:	f1 08       	sbc	r15, r1
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:403
+      start += 1000UL;
+ 930:	88 ee       	ldi	r24, 0xE8	; 232
+ 932:	48 0e       	add	r4, r24
+ 934:	83 e0       	ldi	r24, 0x03	; 3
+ 936:	58 1e       	adc	r5, r24
+ 938:	61 1c       	adc	r6, r1
+ 93a:	71 1c       	adc	r7, r1
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:401
+{
+  unsigned long start = micros();
+
+  while (ms > 0UL) {
+    yield();
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 93c:	c1 14       	cp	r12, r1
+ 93e:	d1 04       	cpc	r13, r1
+ 940:	e1 04       	cpc	r14, r1
+ 942:	f1 04       	cpc	r15, r1
+ 944:	29 f7       	brne	.-54     	; 0x910 <__stack+0x11>
+main():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/main.cpp:47
+ 946:	21 14       	cp	r2, r1
+ 948:	31 04       	cpc	r3, r1
+ 94a:	09 f4       	brne	.+2      	; 0x94e <__stack+0x4f>
+ 94c:	49 cf       	rjmp	.-366    	; 0x7e0 <main+0xe8>
+ 94e:	0e 94 00 00 	call	0	; 0x0 <__vectors>
+ 952:	45 cf       	rjmp	.-374    	; 0x7de <main+0xe6>
+twi_readFrom():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:226
+    #endif
+    TWCR = _BV(TWINT) | _BV(TWEA) | _BV(TWEN) | _BV(TWIE);  // enable INTs, but not START
+  }
+  else
+    // send start condition
+    TWCR = _BV(TWEN) | _BV(TWIE) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);
+ 954:	e5 ee       	ldi	r30, 0xE5	; 229
+ 956:	e0 93 bc 00 	sts	0x00BC, r30	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
+ 95a:	6f cf       	rjmp	.-290    	; 0x83a <main+0x142>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src\utility/twi.c:243
+    while(TWI_MRX == twi_state){
+      continue;
+    }
+  #endif
+
+  if (twi_masterBufferIndex < length)
+ 95c:	81 e0       	ldi	r24, 0x01	; 1
+ 95e:	77 cf       	rjmp	.-274    	; 0x84e <main+0x156>
+updatePin():
+C:\Users\Amjad\Desktop\Articles\PCF8574 (I2C Port Expander)\sketch_oct20a/Functions.ino:2
+void updatePin(unsigned char index, boolean value){
+  bitWrite(pins, index, value);
+ 960:	42 2b       	or	r20, r18
+ 962:	40 93 89 01 	sts	0x0189, r20	; 0x800189 <pins>
+ 966:	a9 cf       	rjmp	.-174    	; 0x8ba <main+0x1c2>
+
+00000968 <_GLOBAL__sub_I__ZN7TwoWire8rxBufferE>:
+_ZN5PrintC2Ev():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/Print.h:46
+    size_t printNumber(unsigned long, uint8_t);
+    size_t printFloat(double, uint8_t);
+  protected:
+    void setWriteError(int err = 1) { write_error = err; }
+  public:
+    Print() : write_error(0) {}
+ 968:	ec e9       	ldi	r30, 0x9C	; 156
+ 96a:	f1 e0       	ldi	r31, 0x01	; 1
+ 96c:	13 82       	std	Z+3, r1	; 0x03
+ 96e:	12 82       	std	Z+2, r1	; 0x02
+_ZN6StreamC2Ev():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/Stream.h:63
+  public:
+    virtual int available() = 0;
+    virtual int read() = 0;
+    virtual int peek() = 0;
+
+    Stream() {_timeout=1000;}
+ 970:	88 ee       	ldi	r24, 0xE8	; 232
+ 972:	93 e0       	ldi	r25, 0x03	; 3
+ 974:	a0 e0       	ldi	r26, 0x00	; 0
+ 976:	b0 e0       	ldi	r27, 0x00	; 0
+ 978:	84 83       	std	Z+4, r24	; 0x04
+ 97a:	95 83       	std	Z+5, r25	; 0x05
+ 97c:	a6 83       	std	Z+6, r26	; 0x06
+ 97e:	b7 83       	std	Z+7, r27	; 0x07
+__base_ctor ():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:53
+void (*TwoWire::user_onRequest)(void);
+void (*TwoWire::user_onReceive)(int);
+
+// Constructors ////////////////////////////////////////////////////////////////
+
+TwoWire::TwoWire()
+ 980:	84 e0       	ldi	r24, 0x04	; 4
+ 982:	91 e0       	ldi	r25, 0x01	; 1
+ 984:	91 83       	std	Z+1, r25	; 0x01
+ 986:	80 83       	st	Z, r24
+_GLOBAL__sub_I__ZN7TwoWire8rxBufferE():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\libraries\Wire\src/Wire.cpp:382
+  user_onRequest = function;
+}
+
+// Preinstantiate Objects //////////////////////////////////////////////////////
+
+TwoWire Wire = TwoWire();
+ 988:	08 95       	ret
+
+0000098a <__tablejump2__>:
+__tablejump2__():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2296
+ 98a:	ee 0f       	add	r30, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2297
+ 98c:	ff 1f       	adc	r31, r31
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2328
+ 98e:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2329
+ 990:	f4 91       	lpm	r31, Z
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2330
+ 992:	e0 2d       	mov	r30, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2331
+ 994:	09 94       	ijmp
+
+00000996 <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 996:	f8 94       	cli
+
+00000998 <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 998:	ff cf       	rjmp	.-2      	; 0x998 <__stop_program>

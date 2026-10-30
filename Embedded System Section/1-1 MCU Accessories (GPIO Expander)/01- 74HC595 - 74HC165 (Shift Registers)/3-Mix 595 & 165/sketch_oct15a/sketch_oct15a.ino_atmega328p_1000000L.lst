@@ -1,0 +1,979 @@
+
+C:\Users\Amjad\AppData\Local\arduino\sketches\115340DCE065E898713B77140B0FC2D0/sketch_oct15a.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	0c 94 61 00 	jmp	0xc2	; 0xc2 <__ctors_end>
+   4:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+   8:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+   c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  10:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  14:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  18:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  1c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  20:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  24:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  28:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  2c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  30:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  34:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  38:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  3c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  40:	0c 94 94 01 	jmp	0x328	; 0x328 <__vector_16>
+  44:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  48:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  4c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  50:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  54:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  58:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  5c:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  60:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+  64:	0c 94 73 00 	jmp	0xe6	; 0xe6 <__bad_interrupt>
+
+00000068 <__trampolines_end>:
+__trampolines_start():
+  68:	00 00       	nop
+  6a:	00 00       	nop
+  6c:	23 00       	.word	0x0023	; ????
+  6e:	26 00       	.word	0x0026	; ????
+  70:	29 00       	.word	0x0029	; ????
+
+00000072 <port_to_output_PGM>:
+  72:	00 00 00 00 25 00 28 00 2b 00                       ....%.(.+.
+
+0000007c <digital_pin_to_port_PGM>:
+  7c:	04 04 04 04 04 04 04 04 02 02 02 02 02 02 03 03     ................
+  8c:	03 03 03 03 02 02 03                                .......
+
+00000093 <digital_pin_to_bit_mask_PGM>:
+  93:	01 02 04 08 10 20 40 80 01 02 04 08 10 20 01 02     ..... @...... ..
+  a3:	04 08 10 20 40 80 40                                ... @.@
+
+000000aa <digital_pin_to_timer_PGM>:
+  aa:	00 00 00 09 00 03 02 00 00 04 05 08 00 00 00 00     ................
+	...
+
+000000c2 <__ctors_end>:
+__dtors_end():
+  c2:	11 24       	eor	r1, r1
+  c4:	1f be       	out	0x3f, r1	; 63
+  c6:	cf ef       	ldi	r28, 0xFF	; 255
+  c8:	d8 e0       	ldi	r29, 0x08	; 8
+  ca:	de bf       	out	0x3e, r29	; 62
+  cc:	cd bf       	out	0x3d, r28	; 61
+
+000000ce <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  ce:	21 e0       	ldi	r18, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  d0:	a0 e0       	ldi	r26, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  d2:	b1 e0       	ldi	r27, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  d4:	01 c0       	rjmp	.+2      	; 0xd8 <.do_clear_bss_start>
+
+000000d6 <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  d6:	1d 92       	st	X+, r1
+
+000000d8 <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  d8:	ad 30       	cpi	r26, 0x0D	; 13
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  da:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  dc:	e1 f7       	brne	.-8      	; 0xd6 <.do_clear_bss_loop>
+.do_clear_bss_start():
+  de:	0e 94 de 01 	call	0x3bc	; 0x3bc <main>
+  e2:	0c 94 3f 02 	jmp	0x47e	; 0x47e <_exit>
+
+000000e6 <__bad_interrupt>:
+__vector_22():
+  e6:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000ea <turnOffPWM>:
+turnOffPWM():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:77
+//
+//static inline void turnOffPWM(uint8_t timer) __attribute__ ((always_inline));
+//static inline void turnOffPWM(uint8_t timer)
+static void turnOffPWM(uint8_t timer)
+{
+  switch (timer)
+  ea:	84 30       	cpi	r24, 0x04	; 4
+  ec:	81 f0       	breq	.+32     	; 0x10e <turnOffPWM+0x24>
+  ee:	28 f4       	brcc	.+10     	; 0xfa <turnOffPWM+0x10>
+  f0:	82 30       	cpi	r24, 0x02	; 2
+  f2:	e9 f0       	breq	.+58     	; 0x12e <turnOffPWM+0x44>
+  f4:	83 30       	cpi	r24, 0x03	; 3
+  f6:	f9 f0       	breq	.+62     	; 0x136 <turnOffPWM+0x4c>
+  f8:	08 95       	ret
+  fa:	88 30       	cpi	r24, 0x08	; 8
+  fc:	71 f0       	breq	.+28     	; 0x11a <turnOffPWM+0x30>
+  fe:	89 30       	cpi	r24, 0x09	; 9
+ 100:	91 f0       	breq	.+36     	; 0x126 <turnOffPWM+0x3c>
+ 102:	85 30       	cpi	r24, 0x05	; 5
+ 104:	b9 f4       	brne	.+46     	; 0x134 <turnOffPWM+0x4a>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:87
+        TCCR1A &= ~_BV(COM1A1);
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 106:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 10a:	8f 7d       	andi	r24, 0xDF	; 223
+ 10c:	03 c0       	rjmp	.+6      	; 0x114 <turnOffPWM+0x2a>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:82
+  switch (timer)
+  {
+    // Timer1
+    #if defined(TCCR1A) && defined(COM1A1)
+      case TIMER1A:
+        TCCR1A &= ~_BV(COM1A1);
+ 10e:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 112:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:87
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 114:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 118:	08 95       	ret
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:104
+        TCCR2 &= ~_BV(COM21);
+        break;
+    #endif
+    #if defined(TCCR2A) && defined(COM2A1)
+      case TIMER2A:
+        TCCR2A &= ~_BV(COM2A1);
+ 11a:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 11e:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:109
+        break;
+    #endif
+    #if defined(TCCR2A) && defined(COM2B1)
+      case TIMER2B:
+        TCCR2A &= ~_BV(COM2B1);
+ 120:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 124:	08 95       	ret
+ 126:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 12a:	8f 7d       	andi	r24, 0xDF	; 223
+ 12c:	f9 cf       	rjmp	.-14     	; 0x120 <turnOffPWM+0x36>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:176
+        TCCR0 &= ~_BV(COM01);
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0A1)
+      case TIMER0A:
+        TCCR0A &= ~_BV(COM0A1);
+ 12e:	84 b5       	in	r24, 0x24	; 36
+ 130:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:181
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0B1)
+      case TIMER0B:
+        TCCR0A &= ~_BV(COM0B1);
+ 132:	84 bd       	out	0x24, r24	; 36
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:185
+        break;
+    #endif
+  }
+}
+ 134:	08 95       	ret
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:181
+        TCCR0A &= ~_BV(COM0A1);
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0B1)
+      case TIMER0B:
+        TCCR0A &= ~_BV(COM0B1);
+ 136:	84 b5       	in	r24, 0x24	; 36
+ 138:	8f 7d       	andi	r24, 0xDF	; 223
+ 13a:	fb cf       	rjmp	.-10     	; 0x132 <turnOffPWM+0x48>
+
+0000013c <digitalWrite>:
+digitalWrite():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:188
+    #endif
+  }
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+ 13c:	1f 93       	push	r17
+ 13e:	cf 93       	push	r28
+ 140:	df 93       	push	r29
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:189
+  uint8_t timer = digitalPinToTimer(pin);
+ 142:	28 2f       	mov	r18, r24
+ 144:	30 e0       	ldi	r19, 0x00	; 0
+ 146:	f9 01       	movw	r30, r18
+ 148:	e6 55       	subi	r30, 0x56	; 86
+ 14a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 14c:	84 91       	lpm	r24, Z
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:190
+  uint8_t bit = digitalPinToBitMask(pin);
+ 14e:	f9 01       	movw	r30, r18
+ 150:	ed 56       	subi	r30, 0x6D	; 109
+ 152:	ff 4f       	sbci	r31, 0xFF	; 255
+ 154:	d4 91       	lpm	r29, Z
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:191
+  uint8_t port = digitalPinToPort(pin);
+ 156:	f9 01       	movw	r30, r18
+ 158:	e4 58       	subi	r30, 0x84	; 132
+ 15a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 15c:	c4 91       	lpm	r28, Z
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:194
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 15e:	cc 23       	and	r28, r28
+ 160:	a9 f0       	breq	.+42     	; 0x18c <digitalWrite+0x50>
+ 162:	16 2f       	mov	r17, r22
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:198
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 164:	81 11       	cpse	r24, r1
+ 166:	0e 94 75 00 	call	0xea	; 0xea <turnOffPWM>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:200
+
+  out = portOutputRegister(port);
+ 16a:	ec 2f       	mov	r30, r28
+ 16c:	f0 e0       	ldi	r31, 0x00	; 0
+ 16e:	ee 0f       	add	r30, r30
+ 170:	ff 1f       	adc	r31, r31
+ 172:	ee 58       	subi	r30, 0x8E	; 142
+ 174:	ff 4f       	sbci	r31, 0xFF	; 255
+ 176:	a5 91       	lpm	r26, Z+
+ 178:	b4 91       	lpm	r27, Z
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:202
+
+  uint8_t oldSREG = SREG;
+ 17a:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:203
+  cli();
+ 17c:	f8 94       	cli
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:206
+
+  if (val == LOW) {
+    *out &= ~bit;
+ 17e:	ec 91       	ld	r30, X
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:205
+  out = portOutputRegister(port);
+
+  uint8_t oldSREG = SREG;
+  cli();
+
+  if (val == LOW) {
+ 180:	11 11       	cpse	r17, r1
+ 182:	08 c0       	rjmp	.+16     	; 0x194 <digitalWrite+0x58>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:206
+    *out &= ~bit;
+ 184:	d0 95       	com	r29
+ 186:	de 23       	and	r29, r30
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:208
+  } else {
+    *out |= bit;
+ 188:	dc 93       	st	X, r29
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:211
+  }
+
+  SREG = oldSREG;
+ 18a:	8f bf       	out	0x3f, r24	; 63
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:212
+}
+ 18c:	df 91       	pop	r29
+ 18e:	cf 91       	pop	r28
+ 190:	1f 91       	pop	r17
+ 192:	08 95       	ret
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:208
+  cli();
+
+  if (val == LOW) {
+    *out &= ~bit;
+  } else {
+    *out |= bit;
+ 194:	de 2b       	or	r29, r30
+ 196:	f8 cf       	rjmp	.-16     	; 0x188 <digitalWrite+0x4c>
+
+00000198 <micros>:
+micros():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:237
+  unsigned char f; // temporary storage for millis fraction counter
+  unsigned char q = 0; // record whether an overflow is flagged
+#endif
+  // t will be the number where the timer0 counter stopped
+  uint8_t t;
+  uint8_t oldSREG = SREG;
+ 198:	3f b7       	in	r19, 0x3f	; 63
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:240
+
+  // Stop all interrupts
+  cli();
+ 19a:	f8 94       	cli
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:247
+#ifdef CORRECT_EXACT_MICROS
+  // combine exact millisec and 8usec counters
+  m = timer0_millis;
+  f = timer0_fract;
+#else
+  m = timer0_overflow_count;
+ 19c:	80 91 09 01 	lds	r24, 0x0109	; 0x800109 <timer0_overflow_count>
+ 1a0:	90 91 0a 01 	lds	r25, 0x010A	; 0x80010a <timer0_overflow_count+0x1>
+ 1a4:	a0 91 0b 01 	lds	r26, 0x010B	; 0x80010b <timer0_overflow_count+0x2>
+ 1a8:	b0 91 0c 01 	lds	r27, 0x010C	; 0x80010c <timer0_overflow_count+0x3>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:252
+#endif
+
+  // TCNT0 : The Timer Counter Register
+#if defined(TCNT0)
+  t = TCNT0;
+ 1ac:	26 b5       	in	r18, 0x26	; 38
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:261
+  #error TIMER 0 not defined
+#endif
+
+  // Timer0 Interrupt Flag Register
+#ifdef TIFR0
+  if ((TIFR0 & _BV(TOV0)) && (t < 255))
+ 1ae:	a8 9b       	sbis	0x15, 0	; 21
+ 1b0:	05 c0       	rjmp	.+10     	; 0x1bc <micros+0x24>
+ 1b2:	2f 3f       	cpi	r18, 0xFF	; 255
+ 1b4:	19 f0       	breq	.+6      	; 0x1bc <micros+0x24>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:263
+#ifndef CORRECT_EXACT_MICROS
+    m++;
+ 1b6:	01 96       	adiw	r24, 0x01	; 1
+ 1b8:	a1 1d       	adc	r26, r1
+ 1ba:	b1 1d       	adc	r27, r1
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:276
+#else
+    q = 1;
+#endif
+#endif
+  // Restore SREG
+  SREG = oldSREG;
+ 1bc:	3f bf       	out	0x3f, r19	; 63
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:292
+      ((t * MICROSECONDS_PER_TIMER0_OVERFLOW) >> 8);
+  return q ? m + MICROSECONDS_PER_TIMER0_OVERFLOW : m;
+#elif 1
+  /* All power-of-two Megahertz frequencies enter here, as well as 12.8 MHz.
+     We only end up here if right shift before multiplication is exact. */
+  return ((m << 8) + t) * (MICROSECONDS_PER_TIMER0_OVERFLOW >> 8);
+ 1be:	ba 2f       	mov	r27, r26
+ 1c0:	a9 2f       	mov	r26, r25
+ 1c2:	98 2f       	mov	r25, r24
+ 1c4:	88 27       	eor	r24, r24
+ 1c6:	bc 01       	movw	r22, r24
+ 1c8:	cd 01       	movw	r24, r26
+ 1ca:	62 0f       	add	r22, r18
+ 1cc:	71 1d       	adc	r23, r1
+ 1ce:	81 1d       	adc	r24, r1
+ 1d0:	91 1d       	adc	r25, r1
+ 1d2:	46 e0       	ldi	r20, 0x06	; 6
+ 1d4:	66 0f       	add	r22, r22
+ 1d6:	77 1f       	adc	r23, r23
+ 1d8:	88 1f       	adc	r24, r24
+ 1da:	99 1f       	adc	r25, r25
+ 1dc:	4a 95       	dec	r20
+ 1de:	d1 f7       	brne	.-12     	; 0x1d4 <micros+0x3c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:393
+  // m & t are multiplied by 4 (since it was already multiplied by 256)
+  // t is multiplied by 4
+  return ((m << 8) + t) * (64 / clockCyclesPerMicrosecond());
+#endif
+#endif // 0
+}
+ 1e0:	08 95       	ret
+
+000001e2 <delay>:
+delay():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:396
+
+void delay(unsigned long ms)
+{
+ 1e2:	8f 92       	push	r8
+ 1e4:	9f 92       	push	r9
+ 1e6:	af 92       	push	r10
+ 1e8:	bf 92       	push	r11
+ 1ea:	cf 92       	push	r12
+ 1ec:	df 92       	push	r13
+ 1ee:	ef 92       	push	r14
+ 1f0:	ff 92       	push	r15
+ 1f2:	4b 01       	movw	r8, r22
+ 1f4:	5c 01       	movw	r10, r24
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:397
+  unsigned long start = micros();
+ 1f6:	0e 94 cc 00 	call	0x198	; 0x198 <micros>
+ 1fa:	6b 01       	movw	r12, r22
+ 1fc:	7c 01       	movw	r14, r24
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:401
+
+  while (ms > 0UL) {
+    yield();
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 1fe:	0e 94 cc 00 	call	0x198	; 0x198 <micros>
+ 202:	6c 19       	sub	r22, r12
+ 204:	7d 09       	sbc	r23, r13
+ 206:	8e 09       	sbc	r24, r14
+ 208:	9f 09       	sbc	r25, r15
+ 20a:	68 3e       	cpi	r22, 0xE8	; 232
+ 20c:	73 40       	sbci	r23, 0x03	; 3
+ 20e:	81 05       	cpc	r24, r1
+ 210:	91 05       	cpc	r25, r1
+ 212:	a8 f3       	brcs	.-22     	; 0x1fe <delay+0x1c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:402
+      ms--;
+ 214:	21 e0       	ldi	r18, 0x01	; 1
+ 216:	82 1a       	sub	r8, r18
+ 218:	91 08       	sbc	r9, r1
+ 21a:	a1 08       	sbc	r10, r1
+ 21c:	b1 08       	sbc	r11, r1
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:403
+      start += 1000UL;
+ 21e:	88 ee       	ldi	r24, 0xE8	; 232
+ 220:	c8 0e       	add	r12, r24
+ 222:	83 e0       	ldi	r24, 0x03	; 3
+ 224:	d8 1e       	adc	r13, r24
+ 226:	e1 1c       	adc	r14, r1
+ 228:	f1 1c       	adc	r15, r1
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:401
+{
+  unsigned long start = micros();
+
+  while (ms > 0UL) {
+    yield();
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 22a:	81 14       	cp	r8, r1
+ 22c:	91 04       	cpc	r9, r1
+ 22e:	a1 04       	cpc	r10, r1
+ 230:	b1 04       	cpc	r11, r1
+ 232:	29 f7       	brne	.-54     	; 0x1fe <delay+0x1c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:406
+      ms--;
+      start += 1000UL;
+    }
+  }
+}
+ 234:	ff 90       	pop	r15
+ 236:	ef 90       	pop	r14
+ 238:	df 90       	pop	r13
+ 23a:	cf 90       	pop	r12
+ 23c:	bf 90       	pop	r11
+ 23e:	af 90       	pop	r10
+ 240:	9f 90       	pop	r9
+ 242:	8f 90       	pop	r8
+ 244:	08 95       	ret
+
+00000246 <update595(unsigned int)>:
+_Z9update595j():
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/Functions.ino:11
+      digitalWrite(CLOCK_IN, 0);
+  }
+  return value;
+}
+
+void update595(unsigned data){
+ 246:	0f 93       	push	r16
+ 248:	1f 93       	push	r17
+ 24a:	cf 93       	push	r28
+ 24c:	df 93       	push	r29
+ 24e:	8c 01       	movw	r16, r24
+ 250:	c7 e0       	ldi	r28, 0x07	; 7
+ 252:	d0 e0       	ldi	r29, 0x00	; 0
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/Functions.ino:13
+  for(int i=0; i<8; i++){
+      digitalWrite(DATA_OUT,bitRead(data , 7-i));
+ 254:	b8 01       	movw	r22, r16
+ 256:	0c 2e       	mov	r0, r28
+ 258:	02 c0       	rjmp	.+4      	; 0x25e <update595(unsigned int)+0x18>
+ 25a:	76 95       	lsr	r23
+ 25c:	67 95       	ror	r22
+ 25e:	0a 94       	dec	r0
+ 260:	e2 f7       	brpl	.-8      	; 0x25a <update595(unsigned int)+0x14>
+ 262:	61 70       	andi	r22, 0x01	; 1
+ 264:	89 e0       	ldi	r24, 0x09	; 9
+ 266:	0e 94 9e 00 	call	0x13c	; 0x13c <digitalWrite>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/Functions.ino:14
+      digitalWrite(CLOCK_OUT, 1);
+ 26a:	61 e0       	ldi	r22, 0x01	; 1
+ 26c:	88 e0       	ldi	r24, 0x08	; 8
+ 26e:	0e 94 9e 00 	call	0x13c	; 0x13c <digitalWrite>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/Functions.ino:15
+      digitalWrite(CLOCK_OUT, 0);
+ 272:	60 e0       	ldi	r22, 0x00	; 0
+ 274:	88 e0       	ldi	r24, 0x08	; 8
+ 276:	0e 94 9e 00 	call	0x13c	; 0x13c <digitalWrite>
+ 27a:	21 97       	sbiw	r28, 0x01	; 1
+ 27c:	58 f7       	brcc	.-42     	; 0x254 <update595(unsigned int)+0xe>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/Functions.ino:17
+  }
+}
+ 27e:	df 91       	pop	r29
+ 280:	cf 91       	pop	r28
+ 282:	1f 91       	pop	r17
+ 284:	0f 91       	pop	r16
+ 286:	08 95       	ret
+
+00000288 <update165()>:
+_Z9update165v():
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/Functions.ino:1
+unsigned char update165(){
+ 288:	9f 92       	push	r9
+ 28a:	af 92       	push	r10
+ 28c:	bf 92       	push	r11
+ 28e:	cf 92       	push	r12
+ 290:	df 92       	push	r13
+ 292:	ef 92       	push	r14
+ 294:	ff 92       	push	r15
+ 296:	0f 93       	push	r16
+ 298:	1f 93       	push	r17
+ 29a:	cf 93       	push	r28
+ 29c:	df 93       	push	r29
+ 29e:	c7 e0       	ldi	r28, 0x07	; 7
+ 2a0:	d0 e0       	ldi	r29, 0x00	; 0
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/Functions.ino:2
+  unsigned char value = 0; 
+ 2a2:	b1 2c       	mov	r11, r1
+digitalRead():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:216
+  SREG = oldSREG;
+}
+
+int digitalRead(uint8_t pin)
+{
+  uint8_t timer = digitalPinToTimer(pin);
+ 2a4:	06 eb       	ldi	r16, 0xB6	; 182
+ 2a6:	10 e0       	ldi	r17, 0x00	; 0
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:217
+  uint8_t bit = digitalPinToBitMask(pin);
+ 2a8:	9f e9       	ldi	r25, 0x9F	; 159
+ 2aa:	e9 2e       	mov	r14, r25
+ 2ac:	90 e0       	ldi	r25, 0x00	; 0
+ 2ae:	f9 2e       	mov	r15, r25
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:218
+  uint8_t port = digitalPinToPort(pin);
+ 2b0:	28 e8       	ldi	r18, 0x88	; 136
+ 2b2:	c2 2e       	mov	r12, r18
+ 2b4:	20 e0       	ldi	r18, 0x00	; 0
+ 2b6:	d2 2e       	mov	r13, r18
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:216
+  SREG = oldSREG;
+}
+
+int digitalRead(uint8_t pin)
+{
+  uint8_t timer = digitalPinToTimer(pin);
+ 2b8:	f8 01       	movw	r30, r16
+ 2ba:	84 91       	lpm	r24, Z
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:217
+  uint8_t bit = digitalPinToBitMask(pin);
+ 2bc:	f7 01       	movw	r30, r14
+ 2be:	a4 90       	lpm	r10, Z
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:218
+  uint8_t port = digitalPinToPort(pin);
+ 2c0:	f6 01       	movw	r30, r12
+ 2c2:	94 90       	lpm	r9, Z
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:220
+
+  if (port == NOT_A_PIN) return LOW;
+ 2c4:	99 20       	and	r9, r9
+ 2c6:	71 f1       	breq	.+92     	; 0x324 <update165()+0x9c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:224
+
+  // If the pin that support PWM output, we need to turn it off
+  // before getting a digital reading.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 2c8:	81 11       	cpse	r24, r1
+ 2ca:	0e 94 75 00 	call	0xea	; 0xea <turnOffPWM>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:226
+
+  if (*portInputRegister(port) & bit) return HIGH;
+ 2ce:	e9 2d       	mov	r30, r9
+ 2d0:	f0 e0       	ldi	r31, 0x00	; 0
+ 2d2:	ee 0f       	add	r30, r30
+ 2d4:	ff 1f       	adc	r31, r31
+ 2d6:	e8 59       	subi	r30, 0x98	; 152
+ 2d8:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2da:	a5 91       	lpm	r26, Z+
+ 2dc:	b4 91       	lpm	r27, Z
+ 2de:	8c 91       	ld	r24, X
+ 2e0:	a8 22       	and	r10, r24
+ 2e2:	31 e0       	ldi	r19, 0x01	; 1
+ 2e4:	09 f4       	brne	.+2      	; 0x2e8 <update165()+0x60>
+ 2e6:	30 e0       	ldi	r19, 0x00	; 0
+_Z9update165v():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:220
+{
+  uint8_t timer = digitalPinToTimer(pin);
+  uint8_t bit = digitalPinToBitMask(pin);
+  uint8_t port = digitalPinToPort(pin);
+
+  if (port == NOT_A_PIN) return LOW;
+ 2e8:	83 2f       	mov	r24, r19
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/Functions.ino:4
+  for(int i=0; i<8; i++){
+      value |= (digitalRead(DATA_IN)<<(7-i));
+ 2ea:	0c 2e       	mov	r0, r28
+ 2ec:	01 c0       	rjmp	.+2      	; 0x2f0 <update165()+0x68>
+ 2ee:	88 0f       	add	r24, r24
+ 2f0:	0a 94       	dec	r0
+ 2f2:	ea f7       	brpl	.-6      	; 0x2ee <update165()+0x66>
+ 2f4:	b8 2a       	or	r11, r24
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/Functions.ino:5
+      digitalWrite(CLOCK_IN, 1);
+ 2f6:	61 e0       	ldi	r22, 0x01	; 1
+ 2f8:	8b e0       	ldi	r24, 0x0B	; 11
+ 2fa:	0e 94 9e 00 	call	0x13c	; 0x13c <digitalWrite>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/Functions.ino:6
+      digitalWrite(CLOCK_IN, 0);
+ 2fe:	60 e0       	ldi	r22, 0x00	; 0
+ 300:	8b e0       	ldi	r24, 0x0B	; 11
+ 302:	0e 94 9e 00 	call	0x13c	; 0x13c <digitalWrite>
+ 306:	21 97       	sbiw	r28, 0x01	; 1
+ 308:	b8 f6       	brcc	.-82     	; 0x2b8 <update165()+0x30>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/Functions.ino:9
+  }
+  return value;
+}
+ 30a:	8b 2d       	mov	r24, r11
+ 30c:	df 91       	pop	r29
+ 30e:	cf 91       	pop	r28
+ 310:	1f 91       	pop	r17
+ 312:	0f 91       	pop	r16
+ 314:	ff 90       	pop	r15
+ 316:	ef 90       	pop	r14
+ 318:	df 90       	pop	r13
+ 31a:	cf 90       	pop	r12
+ 31c:	bf 90       	pop	r11
+ 31e:	af 90       	pop	r10
+ 320:	9f 90       	pop	r9
+ 322:	08 95       	ret
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:220
+ 324:	80 e0       	ldi	r24, 0x00	; 0
+ 326:	e1 cf       	rjmp	.-62     	; 0x2ea <update165()+0x62>
+
+00000328 <__vector_16>:
+__vector_16():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:159
+#if defined(__AVR_ATtiny24__) || defined(__AVR_ATtiny44__) || defined(__AVR_ATtiny84__)
+ISR(TIM0_OVF_vect)
+#else
+ISR(TIMER0_OVF_vect)
+#endif
+{
+ 328:	1f 92       	push	r1
+ 32a:	0f 92       	push	r0
+ 32c:	0f b6       	in	r0, 0x3f	; 63
+ 32e:	0f 92       	push	r0
+ 330:	11 24       	eor	r1, r1
+ 332:	2f 93       	push	r18
+ 334:	3f 93       	push	r19
+ 336:	8f 93       	push	r24
+ 338:	9f 93       	push	r25
+ 33a:	af 93       	push	r26
+ 33c:	bf 93       	push	r27
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:167
+  static unsigned char timer0_exact = 0;
+#endif
+
+  // copy these to local variables so they can be stored in registers
+  // (volatile variables must be read from memory on every access, so this saves time)
+  unsigned long m = timer0_millis;
+ 33e:	80 91 05 01 	lds	r24, 0x0105	; 0x800105 <timer0_millis>
+ 342:	90 91 06 01 	lds	r25, 0x0106	; 0x800106 <timer0_millis+0x1>
+ 346:	a0 91 07 01 	lds	r26, 0x0107	; 0x800107 <timer0_millis+0x2>
+ 34a:	b0 91 08 01 	lds	r27, 0x0108	; 0x800108 <timer0_millis+0x3>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:168
+  unsigned char f = timer0_fract;
+ 34e:	30 91 04 01 	lds	r19, 0x0104	; 0x800104 <timer0_fract>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:170
+
+  f += FRACT_INC FRACT_INC_PLUS;
+ 352:	20 e3       	ldi	r18, 0x30	; 48
+ 354:	23 0f       	add	r18, r19
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:200
+    ++f;
+  }
+#endif
+#endif // CORRECT_EXACT_MILLIS
+
+  if (f >= FRACT_MAX) {
+ 356:	2d 37       	cpi	r18, 0x7D	; 125
+ 358:	68 f1       	brcs	.+90     	; 0x3b4 <__vector_16+0x8c>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:201
+    f -= FRACT_MAX;
+ 35a:	23 eb       	ldi	r18, 0xB3	; 179
+ 35c:	23 0f       	add	r18, r19
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:202
+    m += MILLIS_INC + 1;
+ 35e:	41 96       	adiw	r24, 0x11	; 17
+ 360:	a1 1d       	adc	r26, r1
+ 362:	b1 1d       	adc	r27, r1
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:208
+  }
+  else {
+    m += MILLIS_INC;
+  }
+
+  timer0_fract = f;
+ 364:	20 93 04 01 	sts	0x0104, r18	; 0x800104 <timer0_fract>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:209
+  timer0_millis = m;
+ 368:	80 93 05 01 	sts	0x0105, r24	; 0x800105 <timer0_millis>
+ 36c:	90 93 06 01 	sts	0x0106, r25	; 0x800106 <timer0_millis+0x1>
+ 370:	a0 93 07 01 	sts	0x0107, r26	; 0x800107 <timer0_millis+0x2>
+ 374:	b0 93 08 01 	sts	0x0108, r27	; 0x800108 <timer0_millis+0x3>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:211
+#ifndef CORRECT_EXACT_MICROS
+  timer0_overflow_count++;
+ 378:	80 91 09 01 	lds	r24, 0x0109	; 0x800109 <timer0_overflow_count>
+ 37c:	90 91 0a 01 	lds	r25, 0x010A	; 0x80010a <timer0_overflow_count+0x1>
+ 380:	a0 91 0b 01 	lds	r26, 0x010B	; 0x80010b <timer0_overflow_count+0x2>
+ 384:	b0 91 0c 01 	lds	r27, 0x010C	; 0x80010c <timer0_overflow_count+0x3>
+ 388:	01 96       	adiw	r24, 0x01	; 1
+ 38a:	a1 1d       	adc	r26, r1
+ 38c:	b1 1d       	adc	r27, r1
+ 38e:	80 93 09 01 	sts	0x0109, r24	; 0x800109 <timer0_overflow_count>
+ 392:	90 93 0a 01 	sts	0x010A, r25	; 0x80010a <timer0_overflow_count+0x1>
+ 396:	a0 93 0b 01 	sts	0x010B, r26	; 0x80010b <timer0_overflow_count+0x2>
+ 39a:	b0 93 0c 01 	sts	0x010C, r27	; 0x80010c <timer0_overflow_count+0x3>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:213
+#endif
+}
+ 39e:	bf 91       	pop	r27
+ 3a0:	af 91       	pop	r26
+ 3a2:	9f 91       	pop	r25
+ 3a4:	8f 91       	pop	r24
+ 3a6:	3f 91       	pop	r19
+ 3a8:	2f 91       	pop	r18
+ 3aa:	0f 90       	pop	r0
+ 3ac:	0f be       	out	0x3f, r0	; 63
+ 3ae:	0f 90       	pop	r0
+ 3b0:	1f 90       	pop	r1
+ 3b2:	18 95       	reti
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:205
+  if (f >= FRACT_MAX) {
+    f -= FRACT_MAX;
+    m += MILLIS_INC + 1;
+  }
+  else {
+    m += MILLIS_INC;
+ 3b4:	40 96       	adiw	r24, 0x10	; 16
+ 3b6:	a1 1d       	adc	r26, r1
+ 3b8:	b1 1d       	adc	r27, r1
+ 3ba:	d4 cf       	rjmp	.-88     	; 0x364 <__vector_16+0x3c>
+
+000003bc <main>:
+main():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:945
+
+void init()
+{
+  // this needs to be called before setup() or some functions won't
+  // work there
+  sei();
+ 3bc:	78 94       	sei
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:957
+
+  // On the ATmega168, timer 0 is also used for fast hardware pwm
+  // (using phase-correct PWM would mean that timer 0 overflowed half as often
+  // resulting in different millis() behavior on the ATmega8 and ATmega168)
+#if defined(TCCR0A) && defined(WGM01)
+  TCCR0A |= _BV(WGM01) | _BV(WGM00);
+ 3be:	84 b5       	in	r24, 0x24	; 36
+ 3c0:	83 60       	ori	r24, 0x03	; 3
+ 3c2:	84 bd       	out	0x24, r24	; 36
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:972
+  #if defined(WGM00) && defined(WGM01) // The ATmega8 doesn't have WGM00 and WGM01
+    TCCR0 |= _BV(WGM01) | _BV(WGM00);
+  #endif
+#elif defined(TCCR0B) && defined(CS01) && defined(CS00)
+  // This combination is for the standard 168/328/640/1280/1281/2560/2561
+  TCCR0B |= _BV(CS01) | _BV(CS00);
+ 3c4:	85 b5       	in	r24, 0x25	; 37
+ 3c6:	83 60       	ori	r24, 0x03	; 3
+ 3c8:	85 bd       	out	0x25, r24	; 37
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:984
+
+// Enable timer 0 overflow interrupt
+#if defined(TIMSK) && defined(TOIE0)
+  TIMSK |= _BV(TOIE0);
+#elif defined(TIMSK0) && defined(TOIE0)
+  TIMSK0 |= _BV(TOIE0);
+ 3ca:	80 91 6e 00 	lds	r24, 0x006E	; 0x80006e <__DATA_REGION_ORIGIN__+0xe>
+ 3ce:	81 60       	ori	r24, 0x01	; 1
+ 3d0:	80 93 6e 00 	sts	0x006E, r24	; 0x80006e <__DATA_REGION_ORIGIN__+0xe>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:995
+// this is better for motors as it ensures an even waveform
+// note, however, that fast pwm mode can achieve a frequency of up
+// 8 MHz (with a 16 MHz clock) at 50% duty cycle
+
+#if defined(TCCR1B) && defined(CS11) && defined(CS10)
+  TCCR1B = _BV(CS11); // Set timer 1 prescale factor to 64
+ 3d4:	82 e0       	ldi	r24, 0x02	; 2
+ 3d6:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <__DATA_REGION_ORIGIN__+0x21>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1006
+#if F_CPU >= 8000000L
+  TCCR1 |= _BV(CS10);
+#endif
+#endif
+#if defined(TCCR1A) && defined(WGM10)
+  TCCR1A |= _BV(WGM10); // Put timer 1 in 8-bit phase correct pwm mode
+ 3da:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 3de:	81 60       	ori	r24, 0x01	; 1
+ 3e0:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1013
+
+// Set timer 2 prescale factor to 64
+#if defined(TCCR2) && defined(CS22)
+  TCCR2 |= _BV(CS22);
+#elif defined(TCCR2B) && defined(CS22)
+  TCCR2B |= _BV(CS22);
+ 3e4:	80 91 b1 00 	lds	r24, 0x00B1	; 0x8000b1 <__DATA_REGION_ORIGIN__+0x51>
+ 3e8:	84 60       	ori	r24, 0x04	; 4
+ 3ea:	80 93 b1 00 	sts	0x00B1, r24	; 0x8000b1 <__DATA_REGION_ORIGIN__+0x51>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1022
+
+// Configure timer 2 for phase correct pwm (8-bit)
+#if defined(TCCR2) && defined(WGM20)
+  TCCR2 |= _BV(WGM20);
+#elif defined(TCCR2A) && defined(WGM20)
+  TCCR2A |= _BV(WGM20);
+ 3ee:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 3f2:	81 60       	ori	r24, 0x01	; 1
+ 3f4:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1058
+  #elif F_CPU >= 4000000 // 4 MHz / 32 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS0) | _BV(ADEN);
+  #elif F_CPU >= 2000000 // 2 MHz / 16 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADEN);
+  #elif F_CPU >= 1000000 // 1 MHz / 8 = 125 KHz
+    ADCSRA = _BV(ADPS1) | _BV(ADPS0) | _BV(ADEN);
+ 3f8:	83 e8       	ldi	r24, 0x83	; 131
+ 3fa:	80 93 7a 00 	sts	0x007A, r24	; 0x80007a <__DATA_REGION_ORIGIN__+0x1a>
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1070
+  // here so they can be used as normal digital i/o; they will be
+  // reconnected in Serial.begin()
+#if defined(UCSRB)
+  UCSRB = 0;
+#elif defined(UCSR0B)
+  UCSR0B = 0;
+ 3fe:	10 92 c1 00 	sts	0x00C1, r1	; 0x8000c1 <__DATA_REGION_ORIGIN__+0x61>
+setup():
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/sketch_oct15a.ino:11
+#define SHIFT_IN  13
+
+unsigned int data1 , data2;
+
+void setup() {
+  DDRB = 0x2F;
+ 402:	8f e2       	ldi	r24, 0x2F	; 47
+ 404:	84 b9       	out	0x04, r24	; 4
+main():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/main.cpp:47
+  
+  setup();
+    
+  for (;;) {
+    loop();
+    if (serialEventRun) serialEventRun();
+ 406:	80 e0       	ldi	r24, 0x00	; 0
+ 408:	e8 2e       	mov	r14, r24
+ 40a:	80 e0       	ldi	r24, 0x00	; 0
+ 40c:	f8 2e       	mov	r15, r24
+loop():
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/sketch_oct15a.ino:18
+
+void loop() {
+
+  // Read Data From 74HC165:
+  // -----------------------
+  digitalWrite(SHIFT_IN, 0);
+ 40e:	60 e0       	ldi	r22, 0x00	; 0
+ 410:	8d e0       	ldi	r24, 0x0D	; 13
+ 412:	0e 94 9e 00 	call	0x13c	; 0x13c <digitalWrite>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/sketch_oct15a.ino:19
+  delay(5);
+ 416:	65 e0       	ldi	r22, 0x05	; 5
+ 418:	70 e0       	ldi	r23, 0x00	; 0
+ 41a:	80 e0       	ldi	r24, 0x00	; 0
+ 41c:	90 e0       	ldi	r25, 0x00	; 0
+ 41e:	0e 94 f1 00 	call	0x1e2	; 0x1e2 <delay>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/sketch_oct15a.ino:20
+  digitalWrite(SHIFT_IN, 1);    // trig before assign data
+ 422:	61 e0       	ldi	r22, 0x01	; 1
+ 424:	8d e0       	ldi	r24, 0x0D	; 13
+ 426:	0e 94 9e 00 	call	0x13c	; 0x13c <digitalWrite>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/sketch_oct15a.ino:21
+  data1 = update165();
+ 42a:	0e 94 44 01 	call	0x288	; 0x288 <update165()>
+ 42e:	c8 2f       	mov	r28, r24
+ 430:	d0 e0       	ldi	r29, 0x00	; 0
+ 432:	d0 93 03 01 	sts	0x0103, r29	; 0x800103 <data1+0x1>
+ 436:	c0 93 02 01 	sts	0x0102, r28	; 0x800102 <data1>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/sketch_oct15a.ino:22
+  data2 = update165();
+ 43a:	0e 94 44 01 	call	0x288	; 0x288 <update165()>
+ 43e:	08 2f       	mov	r16, r24
+ 440:	10 e0       	ldi	r17, 0x00	; 0
+ 442:	10 93 01 01 	sts	0x0101, r17	; 0x800101 <_edata+0x1>
+ 446:	00 93 00 01 	sts	0x0100, r16	; 0x800100 <_edata>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/sketch_oct15a.ino:27
+  // -----------------------
+
+  // write Data to 74HC595 :
+  // -----------------------
+  digitalWrite(SHIFT_OUT, 0);
+ 44a:	60 e0       	ldi	r22, 0x00	; 0
+ 44c:	8a e0       	ldi	r24, 0x0A	; 10
+ 44e:	0e 94 9e 00 	call	0x13c	; 0x13c <digitalWrite>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/sketch_oct15a.ino:28
+  update595(data2);
+ 452:	c8 01       	movw	r24, r16
+ 454:	0e 94 23 01 	call	0x246	; 0x246 <update595(unsigned int)>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/sketch_oct15a.ino:29
+  update595(data1);
+ 458:	ce 01       	movw	r24, r28
+ 45a:	0e 94 23 01 	call	0x246	; 0x246 <update595(unsigned int)>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/sketch_oct15a.ino:30
+  digitalWrite(SHIFT_OUT, 1);   // trig after assign data
+ 45e:	61 e0       	ldi	r22, 0x01	; 1
+ 460:	8a e0       	ldi	r24, 0x0A	; 10
+ 462:	0e 94 9e 00 	call	0x13c	; 0x13c <digitalWrite>
+C:\Users\Amjad\Desktop\Articles\03- 74HC595 - 74HC165 (Shift Registers)\3-Mix 595 & 165\sketch_oct15a/sketch_oct15a.ino:33
+  // -----------------------
+
+  delay(200);
+ 466:	68 ec       	ldi	r22, 0xC8	; 200
+ 468:	70 e0       	ldi	r23, 0x00	; 0
+ 46a:	80 e0       	ldi	r24, 0x00	; 0
+ 46c:	90 e0       	ldi	r25, 0x00	; 0
+ 46e:	0e 94 f1 00 	call	0x1e2	; 0x1e2 <delay>
+main():
+C:\Users\Amjad\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/main.cpp:47
+ 472:	e1 14       	cp	r14, r1
+ 474:	f1 04       	cpc	r15, r1
+ 476:	59 f2       	breq	.-106    	; 0x40e <__LOCK_REGION_LENGTH__+0xe>
+ 478:	0e 94 00 00 	call	0	; 0x0 <__vectors>
+ 47c:	c8 cf       	rjmp	.-112    	; 0x40e <__LOCK_REGION_LENGTH__+0xe>
+
+0000047e <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 47e:	f8 94       	cli
+
+00000480 <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 480:	ff cf       	rjmp	.-2      	; 0x480 <__stop_program>
